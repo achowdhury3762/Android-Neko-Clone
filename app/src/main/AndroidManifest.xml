@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".AnimalsNotificationService"></service>
+        <activity android:name=".SpinActivity"></activity>
+        <service android:name=".HeroNotificationService"></service>
+        <receiver android:name=".MyAlarmReceiver"></receiver>
     </application>
 
 </manifest>

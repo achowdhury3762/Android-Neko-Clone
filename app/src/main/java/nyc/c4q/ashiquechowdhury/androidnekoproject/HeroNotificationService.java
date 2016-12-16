@@ -1,20 +1,21 @@
 package nyc.c4q.ashiquechowdhury.androidnekoproject;
 
 import android.app.IntentService;
-import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.support.v4.app.NotificationCompat;
-
-import java.util.Random;
 
 /**
  * Created by ashiquechowdhury on 12/12/16.
  */
 
-public class AnimalsNotificationService extends IntentService{
+public class HeroNotificationService extends IntentService{
+    int NOTIFICATION_ID = 555;
     private static final String BASE_IMAGE_URL = "http://imgur.com/";
     private static final String THOR = "";
     private static final String BATMAN = "kwhwqzp.png";
@@ -36,33 +37,28 @@ public class AnimalsNotificationService extends IntentService{
     private static final String HERMES = "";
 
 
-    public AnimalsNotificationService() {
+    public HeroNotificationService() {
         super("notification-service");
     }
 
     @Override
     protected void onHandleIntent(Intent intent) {
         int requestId = (int) System.currentTimeMillis();
-        Intent myIntent = new Intent(this, AnimalClickActivity.class);
+        Intent myIntent = new Intent(this, SpinActivity.class);
+
+        Bitmap largeIcon = BitmapFactory.decodeResource(getResources(), R.drawable.ic_face_black_24dp);
 
         PendingIntent pendingIntent = PendingIntent.getActivity(this, requestId, myIntent, PendingIntent.FLAG_CANCEL_CURRENT);
-        Notification notification = new NotificationCompat.Builder(this)
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this)
                 .setSmallIcon(R.drawable.blackstar)
-                .setContentTitle("Surprise Event!")
+                .setContentTitle("Spins Obtained!")
+                .setContentText("Lets use your spins")
+                .setLargeIcon(largeIcon)
                 .setContentIntent(pendingIntent)
                 .setAutoCancel(true)
-                .build();
-        NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        notificationManager.notify(555, notification);
-    }
+                .setColor(Color.RED);
 
-    public int randomHeroPicture(){
-        Random random = new Random();
-        int number = random.nextInt(1);
-        switch(number){
-            case 0:
-                return R.drawable.blackstar;
-        }
-        return 1;
+        NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        notificationManager.notify(NOTIFICATION_ID, builder.build());
     }
 }
