@@ -6,8 +6,6 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.support.v4.app.NotificationCompat;
 
 import java.util.Random;
@@ -17,6 +15,26 @@ import java.util.Random;
  */
 
 public class AnimalsNotificationService extends IntentService{
+    private static final String BASE_IMAGE_URL = "http://imgur.com/";
+    private static final String THOR = "";
+    private static final String BATMAN = "kwhwqzp.png";
+    private static final String FLASH = "";
+    private static final String GREEN_ARROW = "";
+    private static final String WONDER_WOMAN = "";
+    private static final String CYBORG = "";
+    private static final String SUPERMAN = "";
+    private static final String BEARDMAN = "";
+    private static final String GREENLANTERN = "";
+    private static final String SPIDERMAN = "";
+    private static final String HORNMAN = "";
+    private static final String IRONMAN = "";
+    private static final String CAPTAINAMERICA = "";
+    private static final String HULK = "";
+    private static final String HAWKEYE = "";
+    private static final String EYEPATCH = "";
+    private static final String REDHEAD = "";
+    private static final String HERMES = "";
+
 
     public AnimalsNotificationService() {
         super("notification-service");
@@ -27,10 +45,9 @@ public class AnimalsNotificationService extends IntentService{
         int requestId = (int) System.currentTimeMillis();
         Intent myIntent = new Intent(this, AnimalClickActivity.class);
 
-        Bitmap largeIcon = BitmapFactory.decodeResource(getResources(), R.drawable.blackstar);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, requestId, myIntent, PendingIntent.FLAG_CANCEL_CURRENT);
         Notification notification = new NotificationCompat.Builder(this)
-                .setLargeIcon(largeIcon)
+                .setSmallIcon(R.drawable.blackstar)
                 .setContentTitle("Surprise Event!")
                 .setContentIntent(pendingIntent)
                 .setAutoCancel(true)
@@ -39,7 +56,7 @@ public class AnimalsNotificationService extends IntentService{
         notificationManager.notify(555, notification);
     }
 
-    public int randomAnimalDrawable(){
+    public int randomHeroPicture(){
         Random random = new Random();
         int number = random.nextInt(1);
         switch(number){
