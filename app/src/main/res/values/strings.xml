@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AndroidNekoProject</string>
+    <string name="dialog_spin_count">HOW MANY SPINS WILL YOU USE</string>
 </resources>
