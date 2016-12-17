@@ -14,12 +14,12 @@ import java.lang.reflect.Method;
 /**
  * Created by ashiquechowdhury on 12/12/16.
  */
-public class SpinActivity extends AppCompatActivity{
+public class SpinActivity extends AppCompatActivity {
     SharedPreferences HeroSharedPref;
     private static final String HEROCOUNT = "nyc.c4q.ashiquechowdhury.HEROCOUNT";
 
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spinner);
 
@@ -29,19 +29,11 @@ public class SpinActivity extends AppCompatActivity{
         int totalHeroCount = HeroSharedPref.getInt(HEROCOUNT, 0);
         Toast.makeText(this, String.valueOf(totalHeroCount), Toast.LENGTH_LONG).show();
 
-            int spinsEarned = intent.getIntExtra(HeroNotificationService.SPINSEARNED, 0);
-            SharedPreferences.Editor editor = HeroSharedPref.edit();
-            editor.putInt(HEROCOUNT, spinsEarned + totalHeroCount);
-            editor.commit();
-            Toast.makeText(this, "intent+" + String.valueOf(totalHeroCount), Toast.LENGTH_LONG).show();
-        }
-    }
-    public Intent getIntent(PendingIntent pendingIntent) throws IllegalStateException {
-        try {
-            Method getIntent = PendingIntent.class.getDeclaredMethod("getIntent");
-            return (Intent) getIntent.invoke(pendingIntent);
-        } catch (NoSuchMethodException | InvocationTargetException | IllegalAccessException e) {
-            throw new IllegalStateException(e);
-        }
+//            int spinsEarned = intent.getIntExtra(HeroNotificationService.SPINSEARNED, 0);
+//            SharedPreferences.Editor editor = HeroSharedPref.edit();
+//            editor.putInt(HEROCOUNT, spinsEarned + totalHeroCount);
+//            editor.commit();
+//            Toast.makeText(this, "intent+" + String.valueOf(totalHeroCount), Toast.LENGTH_LONG).show();
     }
 }
+
