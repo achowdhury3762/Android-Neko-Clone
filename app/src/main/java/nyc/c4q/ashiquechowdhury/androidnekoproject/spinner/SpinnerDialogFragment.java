@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.TextView;
 
 import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
 
@@ -15,15 +17,30 @@ import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
  */
 
 public class SpinnerDialogFragment extends DialogFragment {
+    private static final String RANDOMNUM = "nyc.c4q.ashiquechowdhury.RANDOMNUM";
+    TextView spinsEarnedText;
     private SpinnerDialogListener mListener;
+
+    public static SpinnerDialogFragment newInstance(int number) {
+        SpinnerDialogFragment frag = new SpinnerDialogFragment();
+        Bundle args = new Bundle();
+        args.putInt(RANDOMNUM, number);
+        frag.setArguments(args);
+        return frag;
+    }
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
+        View dialogView = createDialogView();
+
+        int randomNumber2to10 = getArguments().getInt(RANDOMNUM);
+
+        spinsEarnedText = (TextView) dialogView.findViewById(R.id.spins_TV);
+        spinsEarnedText.setText(String.valueOf(randomNumber2to10) + " SPINS!");
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-
-        LayoutInflater inflater = getActivity().getLayoutInflater();
-        builder.setView(inflater.inflate(R.layout.fragment_spinner, null))
+        builder.setView(dialogView)
+                .setMessage("You've Earned")
                 .setPositiveButton(R.string.use_spinner, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         mListener.onDialogPositiveClick(SpinnerDialogFragment.this);
@@ -34,11 +51,20 @@ public class SpinnerDialogFragment extends DialogFragment {
                         mListener.onDialogNegativeClick(SpinnerDialogFragment.this);
                     }
                 });
-        return builder.create();
+
+        AlertDialog myAlertDialog = builder.create();
+        return myAlertDialog;
+    }
+
+    private View createDialogView() {
+        LayoutInflater inflater = getActivity().getLayoutInflater();
+        return inflater.inflate(R.layout.dialogfragment_spinner, null);
+
     }
 
     public interface SpinnerDialogListener {
         void onDialogPositiveClick(DialogFragment dialog);
+
         void onDialogNegativeClick(DialogFragment dialog);
     }
 
@@ -51,5 +77,9 @@ public class SpinnerDialogFragment extends DialogFragment {
     @Override
     public void onDismiss(DialogInterface dialog) {
         getActivity().finish();
+    }
+
+    void addRandomSpinsToTotal(int number) {
+
     }
 }

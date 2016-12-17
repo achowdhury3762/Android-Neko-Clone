@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        Intent intent = new Intent(this, HeroNotificationService.class);
+        startService(intent);
         scheduleAlarm();
     }
 
