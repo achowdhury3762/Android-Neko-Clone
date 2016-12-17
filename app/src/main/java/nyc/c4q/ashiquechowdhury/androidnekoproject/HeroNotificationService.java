@@ -34,6 +34,7 @@ public class HeroNotificationService extends IntentService{
                 .setAutoCancel(true)
                 .build();
         NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        notificationManager.notify(555, notification);
+        notificationManager.notify(NOTIFICATION_ID, notification);
+
     }
 }

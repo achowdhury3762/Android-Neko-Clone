@@ -5,10 +5,10 @@
     android:layout_width="300dp"
     android:layout_height="wrap_content">
     <ImageView
+        android:id="@+id/hero_dialog_image"
         android:layout_width="match_parent"
         android:layout_height="64dp"
         android:scaleType="center"
-        android:background="@drawable/herodialogpic"
         android:contentDescription="@string/app_name" />
 
     <TextView

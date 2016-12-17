@@ -8,7 +8,10 @@ import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
 
@@ -19,6 +22,7 @@ import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
 public class SpinnerDialogFragment extends DialogFragment {
     private static final String RANDOMNUM = "nyc.c4q.ashiquechowdhury.RANDOMNUM";
     TextView spinsEarnedText;
+    ImageView heroDialogImage;
     private SpinnerDialogListener mListener;
 
     public static SpinnerDialogFragment newInstance(int number) {
@@ -35,7 +39,10 @@ public class SpinnerDialogFragment extends DialogFragment {
 
         int randomNumber2to10 = getArguments().getInt(RANDOMNUM);
 
+        heroDialogImage = (ImageView) dialogView.findViewById(R.id.superheroImageView);
         spinsEarnedText = (TextView) dialogView.findViewById(R.id.spins_TV);
+
+        setImageWithPicasso(heroDialogImage);
         spinsEarnedText.setText(String.valueOf(randomNumber2to10) + " SPINS!");
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
@@ -60,6 +67,13 @@ public class SpinnerDialogFragment extends DialogFragment {
         LayoutInflater inflater = getActivity().getLayoutInflater();
         return inflater.inflate(R.layout.dialogfragment_spinner, null);
 
+    }
+
+    public void setImageWithPicasso(ImageView herodialogImageView) {
+        Picasso.with(getActivity())
+                .load("https://ae01.alicdn.com/kf/HTB1o3REHFXXXXckXpXXq6xXFXXXD/Free-shipping-font-b-Justice-b-font-font-b-League-b-font-font-b-logo-b.jpg")
+                .fit()
+                .into(herodialogImageView);
     }
 
     public interface SpinnerDialogListener {

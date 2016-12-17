@@ -7,6 +7,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="100 spins"
+        android:textSize="50sp"
+        />
+
     <com.nightonke.boommenu.BoomMenuButton
         android:id="@+id/bmb"
         app:bmb_buttonRadius="40dp"
