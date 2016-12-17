@@ -23,7 +23,7 @@ public class SpinnerDialogFragment extends DialogFragment {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 
         LayoutInflater inflater = getActivity().getLayoutInflater();
-        builder.setView(inflater.inflate(R.layout.activity_spinner, null))
+        builder.setView(inflater.inflate(R.layout.fragment_spinner, null))
                 .setPositiveButton(R.string.use_spinner, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         mListener.onDialogPositiveClick(SpinnerDialogFragment.this);
@@ -46,5 +46,10 @@ public class SpinnerDialogFragment extends DialogFragment {
     public void onAttach(Context context) {
         super.onAttach(context);
         mListener = (SpinnerDialogListener) context;
+    }
+
+    @Override
+    public void onDismiss(DialogInterface dialog) {
+        getActivity().finish();
     }
 }

@@ -30,4 +30,5 @@ public class SpinActivity extends FragmentActivity implements SpinnerDialogFragm
         Toast.makeText(this, "View My Heroes", Toast.LENGTH_LONG).show();
     }
 
+
 }
