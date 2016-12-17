@@ -2,7 +2,6 @@ package nyc.c4q.ashiquechowdhury.androidnekoproject;
 
 import android.app.NotificationManager;
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -13,8 +12,6 @@ import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
 
-import static android.os.Build.VERSION_CODES.M;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -22,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        scheduleAlarm();
+//        scheduleAlarm();
 
 
 
@@ -49,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         notificationManager.notify(NOTIFICATION_ID, builder.build());
     }
 
-    private void scheduleAlarm() {
-        Intent intent = new Intent(getApplicationContext(), )
-    }
+//    private void scheduleAlarm() {
+//        Intent intent = new Intent(getApplicationContext(), )
+//    }
 }

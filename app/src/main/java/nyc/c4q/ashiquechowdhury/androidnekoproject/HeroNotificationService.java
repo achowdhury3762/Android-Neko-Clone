@@ -14,7 +14,7 @@ import java.util.Random;
  * Created by ashiquechowdhury on 12/12/16.
  */
 
-public class AnimalsNotificationService extends IntentService{
+public class HeroNotificationService extends IntentService{
     private static final String BASE_IMAGE_URL = "http://imgur.com/";
     private static final String THOR = "";
     private static final String BATMAN = "kwhwqzp.png";
@@ -36,7 +36,7 @@ public class AnimalsNotificationService extends IntentService{
     private static final String HERMES = "";
 
 
-    public AnimalsNotificationService() {
+    public HeroNotificationService() {
         super("notification-service");
     }
 
