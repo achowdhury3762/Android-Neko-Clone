@@ -1,4 +1,4 @@
-package nyc.c4q.ashiquechowdhury.androidnekoproject.spinner;
+package nyc.c4q.ashiquechowdhury.androidnekoproject.herospins;
 
 import android.app.Dialog;
 import android.content.Context;

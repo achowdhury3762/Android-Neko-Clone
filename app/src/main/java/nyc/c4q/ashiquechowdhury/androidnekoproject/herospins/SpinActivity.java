@@ -1,4 +1,4 @@
-package nyc.c4q.ashiquechowdhury.androidnekoproject.spinner;
+package nyc.c4q.ashiquechowdhury.androidnekoproject.herospins;
 
 
 import android.content.Intent;
@@ -39,6 +39,4 @@ public class SpinActivity extends FragmentActivity implements SpinnerDialogFragm
     public void onDialogNegativeClick(DialogFragment dialog) {
         Toast.makeText(this, "View My Heroes", Toast.LENGTH_LONG).show();
     }
-
-
 }

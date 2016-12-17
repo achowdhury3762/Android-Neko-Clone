@@ -8,7 +8,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.NotificationCompat;
 
-import nyc.c4q.ashiquechowdhury.androidnekoproject.spinner.SpinActivity;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.herospins.SpinActivity;
 
 /**
  * Created by ashiquechowdhury on 12/12/16.
