@@ -5,4 +5,5 @@ package nyc.c4q.ashiquechowdhury.androidnekoproject.util;
  */
 
 public class URLS {
+
 }
