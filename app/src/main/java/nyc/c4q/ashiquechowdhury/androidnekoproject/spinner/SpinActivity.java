@@ -18,9 +18,10 @@ public class SpinActivity extends FragmentActivity implements SpinnerDialogFragm
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        showSpinnerDialog();
         randomNumber2to10 = RandomNumberChooser.chooseRandomNumber(8) + 2;
+        showSpinnerDialog();
     }
+
     public void showSpinnerDialog() {
         DialogFragment dialog = SpinnerDialogFragment.newInstance(randomNumber2to10);
         dialog.show(getSupportFragmentManager(), "SpinnerDialogFragment");
