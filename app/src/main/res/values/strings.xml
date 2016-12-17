@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AndroidNekoProject</string>
+    <string name="dialog_spin_count">HOW MANY SPINS WILL YOU USE</string>
+    <string name="hero_overview">My Heroes</string>
+    <string name="use_spinner">Use Spins</string>
+
 </resources>

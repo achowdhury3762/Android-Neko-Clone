@@ -10,6 +10,8 @@ import android.support.v4.app.NotificationCompat;
 
 import java.util.Random;
 
+import nyc.c4q.ashiquechowdhury.androidnekoproject.spinner.SpinActivity;
+
 /**
  * Created by ashiquechowdhury on 12/12/16.
  */
@@ -43,7 +45,7 @@ public class HeroNotificationService extends IntentService{
     @Override
     protected void onHandleIntent(Intent intent) {
         int requestId = (int) System.currentTimeMillis();
-        Intent myIntent = new Intent(this, AnimalClickActivity.class);
+        Intent myIntent = new Intent(this, SpinActivity.class);
 
         PendingIntent pendingIntent = PendingIntent.getActivity(this, requestId, myIntent, PendingIntent.FLAG_CANCEL_CURRENT);
         Notification notification = new NotificationCompat.Builder(this)
