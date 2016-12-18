@@ -7,6 +7,7 @@ import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentActivity;
 import android.widget.Toast;
 
+import nyc.c4q.ashiquechowdhury.androidnekoproject.util.MySharedPreferences;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.util.RandomNumberChooser;
 
 /**
@@ -15,7 +16,6 @@ import nyc.c4q.ashiquechowdhury.androidnekoproject.util.RandomNumberChooser;
 public class SpinActivity extends FragmentActivity implements SpinnerDialogFragment.SpinnerDialogListener {
     private int randomNumber2to10;
     MySharedPreferences sharedPreferences;
-    private static final String RANDNUM = "nyc.c4q.ashiquechowdhry.RANDOMNUM";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,10 +23,8 @@ public class SpinActivity extends FragmentActivity implements SpinnerDialogFragm
         randomNumber2to10 = RandomNumberChooser.chooseRandomNumber(8) + 2;
 
         sharedPreferences = MySharedPreferences.getInstance(getApplicationContext());
-        int savedRandNumber = sharedPreferences.getSpinCount();
         sharedPreferences.increaseSpinCount(randomNumber2to10);
 
-        Toast.makeText(this, String.valueOf(sharedPreferences.getSpinCount()), Toast.LENGTH_LONG).show();
         showSpinnerDialog();
     }
 
@@ -38,7 +36,7 @@ public class SpinActivity extends FragmentActivity implements SpinnerDialogFragm
     @Override
     public void onDialogPositiveClick(DialogFragment dialog) {
         Toast.makeText(this, "Use Spinner", Toast.LENGTH_LONG).show();
-        Intent intent = new Intent(this, SpinBoomMenu.class);
+        Intent intent = new Intent(this, SpinBoomMenuActivity.class);
         intent.putExtra("nyc.c4q.ashiquechowdhury.RANDNUM", randomNumber2to10);
         startActivity(intent);
     }

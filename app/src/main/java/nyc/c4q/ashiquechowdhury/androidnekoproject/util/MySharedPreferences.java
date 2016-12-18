@@ -1,4 +1,4 @@
-package nyc.c4q.ashiquechowdhury.androidnekoproject.herospins;
+package nyc.c4q.ashiquechowdhury.androidnekoproject.util;
 
 import android.content.Context;
 import android.content.SharedPreferences;
