@@ -29,7 +29,8 @@
             android:theme="@style/Theme.Transparent" />
         <activity
             android:name=".herospins.SpinBoomMenu"
-            android:theme="@style/Theme.Transparent"></activity>
+            android:theme="@style/Theme.Transparent">
+        </activity>
     </application>
 
 </manifest>

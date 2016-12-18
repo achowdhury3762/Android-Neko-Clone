@@ -17,6 +17,9 @@ public class SpinBoomMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.boommenu_spinner);
+
+        setTopTitle();
+
         BoomMenuButton bmb = (BoomMenuButton) findViewById(R.id.bmb);
         BoomMenuButton bmb2 = (BoomMenuButton) findViewById(R.id.bmb2);
 
@@ -33,6 +36,10 @@ public class SpinBoomMenu extends AppCompatActivity {
                     .normalText("Butter Doesn't fly!");
             bmb2.addBuilder(builder);
         }
+
+    }
+
+    private void setTopTitle() {
 
     }
 }
