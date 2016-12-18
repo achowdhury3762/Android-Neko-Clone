@@ -1,4 +1,4 @@
-package nyc.c4q.ashiquechowdhury.androidnekoproject.allherospinner;
+package nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -14,14 +14,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.spinner.herofragmentlist.Aquaman;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.spinner.herofragmentlist.Batman;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.spinner.herofragmentlist.BlackWidow;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.spinner.herofragmentlist.CaptainAmerica;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.spinner.herofragmentlist.IronMan;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.spinner.herofragmentlist.Superman;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.spinner.herofragmentlist.Thor;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.spinner.herofragmentlist.WonderWoman;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.herofragments.Aquaman;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.herofragments.Batman;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.herofragments.BlackWidow;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.herofragments.CaptainAmerica;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.herofragments.IronMan;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.herofragments.Superman;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.herofragments.Thor;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.herofragments.WonderWoman;
 
 /**
  * Created by Hyun on 12/17/16.
@@ -67,6 +67,7 @@ public class HeroMenuActivity extends AppCompatActivity {
         FragmentPagerAdapter fragmentPagerAdapter = new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
             public Fragment getItem(int position) {
+                Toast.makeText(HeroMenuActivity.this, String.valueOf(position), Toast.LENGTH_SHORT).show();
                 return fragmentList.get(position);
             }
 
@@ -79,12 +80,12 @@ public class HeroMenuActivity extends AppCompatActivity {
         spinMenu.setOnSpinMenuStateChangeListener(new OnSpinMenuStateChangeListener() {
             @Override
             public void onMenuOpened() {
-                Toast.makeText(HeroMenuActivity.this, "SpinMenu opened", Toast.LENGTH_SHORT).show();
+
             }
 
             @Override
             public void onMenuClosed() {
-                Toast.makeText(HeroMenuActivity.this, "SpinMenu closed", Toast.LENGTH_SHORT).show();
+
             }
         });
     }

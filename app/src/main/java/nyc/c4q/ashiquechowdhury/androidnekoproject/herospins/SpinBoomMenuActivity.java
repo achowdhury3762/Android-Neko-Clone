@@ -94,9 +94,12 @@ public class SpinBoomMenuActivity extends AppCompatActivity {
 
         for (int i = 0; i < bmb9.getPiecePlaceEnum().pieceNumber(); i++) {
             int randNum = RandomNumberChooser.chooseRandomNumber(13);
+            int randomHeroDrawable = heroDrawableArray[randNum];
+            String randomHeroStringKey = heroStringKeyArray[randNum];
+            sharedPrefs.increaseHeroCount(randomHeroStringKey);
 
             TextInsideCircleButton.Builder builder = new TextInsideCircleButton.Builder()
-                    .normalImageRes(heroDrawableArray[randNum])
+                    .normalImageRes(randomHeroDrawable)
                     .buttonRadius(100)
                     .normalText("Butter Doesn't fly!");
             bmb9.addBuilder(builder);
@@ -143,8 +146,6 @@ public class SpinBoomMenuActivity extends AppCompatActivity {
             }
 
         });
-
-
     }
 
     private void startSQLDataBase() {

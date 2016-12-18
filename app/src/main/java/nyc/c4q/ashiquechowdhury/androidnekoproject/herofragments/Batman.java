@@ -1,4 +1,4 @@
-package nyc.c4q.ashiquechowdhury.androidnekoproject.spinner.herofragmentlist;
+package nyc.c4q.ashiquechowdhury.androidnekoproject.herofragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,12 +12,13 @@ import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
 /**
  * Created by Hyun on 12/18/16.
  */
-public class WonderWoman extends Fragment {
+public class Batman extends Fragment {
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
     }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,12 +30,13 @@ public class WonderWoman extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        View view = inflater.inflate(R.layout.wonderwoman, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.batman, container, false);
         return view;
     }
-    public static WonderWoman newInstance(){
-        WonderWoman wonderWoman = new WonderWoman();
-        return wonderWoman;
+
+    public static Batman newInstance() {
+        Batman batman = new Batman();
+        return batman;
     }
 }

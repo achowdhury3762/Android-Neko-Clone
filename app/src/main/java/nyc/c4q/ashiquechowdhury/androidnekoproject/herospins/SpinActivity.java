@@ -6,7 +6,7 @@ import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentActivity;
 import android.widget.Toast;
 
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherospinner.HeroMenuActivity;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.HeroMenuActivity;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.util.MySharedPreferences;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.util.RandomNumberChooser;
 

@@ -1,4 +1,5 @@
-package nyc.c4q.ashiquechowdhury.androidnekoproject.spinner.herofragmentlist;
+package nyc.c4q.ashiquechowdhury.androidnekoproject.herofragments;
+
 
 import android.content.Context;
 import android.os.Bundle;
@@ -10,9 +11,9 @@ import android.view.ViewGroup;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
 
 /**
- * Created by Hyun on 12/18/16.
+ * Created by Hyun on 12/17/16.
  */
-public class IronMan extends Fragment {
+public class HawkEye extends Fragment {
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -30,11 +31,11 @@ public class IronMan extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        View view = inflater.inflate(R.layout.ironman, container, false);
+        View view = inflater.inflate(R.layout.hawkeye, container, false);
         return view;
     }
-    public static IronMan newInstance(){
-        IronMan ironMan = new IronMan();
-        return ironMan;
+    public static HawkEye newInstance(){
+        HawkEye hawkEye = new HawkEye();
+        return hawkEye;
     }
 }

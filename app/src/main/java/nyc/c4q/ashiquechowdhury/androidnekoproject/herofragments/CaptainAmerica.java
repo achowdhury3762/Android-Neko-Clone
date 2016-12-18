@@ -1,4 +1,4 @@
-package nyc.c4q.ashiquechowdhury.androidnekoproject.spinner.herofragmentlist;
+package nyc.c4q.ashiquechowdhury.androidnekoproject.herofragments;
 
 import android.content.Context;
 import android.os.Bundle;
