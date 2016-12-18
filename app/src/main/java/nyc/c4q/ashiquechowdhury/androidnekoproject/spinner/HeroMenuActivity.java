@@ -29,42 +29,20 @@ import nyc.c4q.ashiquechowdhury.androidnekoproject.spinner.herofragmentlist.Wond
 public class HeroMenuActivity extends AppCompatActivity {
 
     private SpinMenu spinMenu;
+    private FragmentPagerAdapter fragmentPagerAdapter;
+    private List<String> heroesMenu = new ArrayList<>();
+    private final List<Fragment> fragmentList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_heromenu);
 
-        spinMenu = (SpinMenu) findViewById(R.id.spin_menu);
+        initViews();
+        addHeroes();
+        addFragments();
 
-        List<String> heroesMenu = new ArrayList<>();
-        heroesMenu.add("AQUAMAN");
-        heroesMenu.add("BATMAN");
-        heroesMenu.add("BLACK WIDOW");
-        heroesMenu.add("CAPTAIN AMERICA");
-        heroesMenu.add("WONDER WOMAN");
-        heroesMenu.add("IRON MAN");
-        heroesMenu.add("THOR");
-        heroesMenu.add("SUPERMAN");
-
-
-        spinMenu.setHintTextStrList(heroesMenu);
-        spinMenu.setHintTextColor(Color.parseColor("#FFFFFF"));
-        spinMenu.setHintTextSize(14);
-        spinMenu.setEnableGesture(true);
-
-        final List<Fragment> fragmentList = new ArrayList<>();
-        fragmentList.add(Aquaman.newInstance());
-        fragmentList.add(Batman.newInstance());
-        fragmentList.add(BlackWidow.newInstance());
-        fragmentList.add(CaptainAmerica.newInstance());
-        fragmentList.add(WonderWoman.newInstance());
-        fragmentList.add(IronMan.newInstance());
-        fragmentList.add(Thor.newInstance());
-        fragmentList.add(Superman.newInstance());
-
-
-        FragmentPagerAdapter fragmentPagerAdapter = new FragmentPagerAdapter(getSupportFragmentManager()) {
+        fragmentPagerAdapter = new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
             public Fragment getItem(int position) {
                 return fragmentList.get(position);
@@ -87,6 +65,38 @@ public class HeroMenuActivity extends AppCompatActivity {
                 Toast.makeText(HeroMenuActivity.this, "SpinMenu closed", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    private void initViews() {
+        spinMenu = (SpinMenu) findViewById(R.id.spin_menu);
+        spinMenu.setHintTextStrList(heroesMenu);
+        spinMenu.setHintTextColor(Color.parseColor("#FFFFFF"));
+        spinMenu.setHintTextSize(14);
+        spinMenu.setEnableGesture(true);
+    }
+
+    private void addHeroes() {
+        heroesMenu.add("AQUAMAN");
+        heroesMenu.add("BATMAN");
+        heroesMenu.add("BLACK WIDOW");
+        heroesMenu.add("CAPTAIN AMERICA");
+        heroesMenu.add("WONDER WOMAN");
+        heroesMenu.add("IRON MAN");
+        heroesMenu.add("THOR");
+        heroesMenu.add("SUPERMAN");
+    }
+
+    private void addFragments() {
+
+        fragmentList.add(Aquaman.newInstance());
+        fragmentList.add(Batman.newInstance());
+        fragmentList.add(BlackWidow.newInstance());
+        fragmentList.add(CaptainAmerica.newInstance());
+        fragmentList.add(WonderWoman.newInstance());
+        fragmentList.add(IronMan.newInstance());
+        fragmentList.add(Thor.newInstance());
+        fragmentList.add(Superman.newInstance());
+
     }
 
 }
