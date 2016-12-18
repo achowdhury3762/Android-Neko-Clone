@@ -10,6 +10,9 @@ import com.nightonke.boommenu.BoomButtons.TextInsideCircleButton;
 import com.nightonke.boommenu.BoomMenuButton;
 import com.nightonke.boommenu.OnBoomListenerAdapter;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.util.HeroDatabaseHelper;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.util.MySharedPreferences;
@@ -27,6 +30,7 @@ public class SpinBoomMenuActivity extends AppCompatActivity {
     BoomMenuButton bmb1;
     private SQLiteDatabase db;
     int[] heroDrawableArray;
+    int[] heroStringKeyArray;
 
 
     @Override
@@ -50,6 +54,16 @@ public class SpinBoomMenuActivity extends AppCompatActivity {
                 R.drawable.superman,
                 R.drawable.spiderman
         };
+
+        heroStringKeyArray = new int[]{
+                
+        }
+
+        Map<Integer, String> heroDrawableMap = new HashMap<>();
+        for (int i = 0; i < heroDrawableArray.length; i++) {
+            heroDrawableMap.put(heroDrawableArray[i], )
+        }
+
         startSQLDataBase();
 
         topTextView = (TextView) findViewById(R.id.total_spin_tView);
@@ -62,6 +76,7 @@ public class SpinBoomMenuActivity extends AppCompatActivity {
 
         for (int i = 0; i < bmb9.getPiecePlaceEnum().pieceNumber(); i++) {
             int randNum = RandomNumberChooser.chooseRandomNumber(13);
+
             TextInsideCircleButton.Builder builder = new TextInsideCircleButton.Builder()
                     .normalImageRes(heroDrawableArray[randNum])
                     .buttonRadius(100)
@@ -88,7 +103,8 @@ public class SpinBoomMenuActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onBoomWillHide() {
+            public void onBoomDidHide() {
+                super.onBoomDidHide();
                 recreate();
             }
         });
@@ -103,9 +119,11 @@ public class SpinBoomMenuActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onBoomWillHide() {
+            public void onBoomDidHide() {
+                super.onBoomDidHide();
                 recreate();
             }
+
         });
 
 
