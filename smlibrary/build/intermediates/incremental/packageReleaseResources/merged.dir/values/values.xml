@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SpinMenu"><attr format="float" name="scale_ratio"/><attr format="color" name="hint_text_color"/><attr format="dimension" name="hint_text_size"/></declare-styleable>
+    <string name="app_name">smLibrary</string>
+</resources>

@@ -1,12 +1,12 @@
 package nyc.c4q.ashiquechowdhury.androidnekoproject.herospins;
 
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentActivity;
 import android.widget.Toast;
 
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherospinner.HeroMenuActivity;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.util.MySharedPreferences;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.util.RandomNumberChooser;
 
@@ -43,6 +43,8 @@ public class SpinActivity extends FragmentActivity implements SpinnerDialogFragm
 
     @Override
     public void onDialogNegativeClick(DialogFragment dialog) {
+        Intent intent = new Intent(this, HeroMenuActivity.class);
+        startActivity(intent);
         Toast.makeText(this, "View My Heroes", Toast.LENGTH_LONG).show();
     }
 }
