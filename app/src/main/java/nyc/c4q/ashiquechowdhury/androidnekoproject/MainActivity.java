@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         scheduleAlarm();
+        finish();
     }
 
     private void scheduleAlarm() {
