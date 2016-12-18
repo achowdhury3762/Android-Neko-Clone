@@ -11,25 +11,28 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Transparent">
+        android:theme="@style/AppTheme">
 
         <receiver android:name=".MyAlarmReceiver"/>
 
-        <service
-            android:name=".HeroNotificationService"/>
+        <service android:name=".HeroNotificationService"/>
 
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.Transparent">
             <intent-filter>
                 <action
                     android:name="android.intent.action.MAIN"/>
-
                 <category
                     android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
         <activity
             android:name=".spinner.SpinActivity"
             android:theme="@style/Theme.Transparent"/>
+        <activity
+            android:name=".spinner.HeroMenuActivity"/>
     </application>
 
 </manifest>

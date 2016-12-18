@@ -5,8 +5,6 @@ import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.view.ActionMode;
-import android.view.MenuItem;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -15,12 +13,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
+        Intent intent = new Intent(this, HeroNotificationService.class);
+        startService(intent);
         scheduleAlarm();
-    }
-    boolean onActionItemClicked (ActionMode mode,MenuItem item){
-
-        return false;
     }
 
     private void scheduleAlarm() {
