@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="nyc.c4q.ashiquechowdhury.androidnekoproject">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -13,26 +12,28 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <receiver android:name=".MyAlarmReceiver"/>
+        <receiver android:name=".MyAlarmReceiver" />
 
-        <service android:name=".HeroNotificationService"/>
+        <service android:name=".HeroNotificationService" />
 
         <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.Transparent">
-            <intent-filter>
-                <action
-                    android:name="android.intent.action.MAIN"/>
-                <category
-                    android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
 
         <activity
-            android:name=".spinner.SpinActivity"
-            android:theme="@style/Theme.Transparent"/>
-        <activity
             android:name=".spinner.HeroMenuActivity"/>
+        <activity
+            android:name=".herospins.SpinActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".herospins.SpinBoomMenuActivity"
+            android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

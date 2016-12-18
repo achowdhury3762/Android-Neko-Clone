@@ -14,8 +14,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.herofragmentlist.HawkEye;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.herofragmentlist.Thor;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.spinner.herofragmentlist.HawkEye;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.spinner.herofragmentlist.Thor;
 
 /**
  * Created by Hyun on 12/17/16.

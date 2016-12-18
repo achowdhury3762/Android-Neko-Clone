@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, HeroNotificationService.class);
         startService(intent);
         scheduleAlarm();
+        finish();
     }
 
     private void scheduleAlarm() {

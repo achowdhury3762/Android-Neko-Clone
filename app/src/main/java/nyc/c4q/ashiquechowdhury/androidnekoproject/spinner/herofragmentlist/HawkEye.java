@@ -1,4 +1,5 @@
-package nyc.c4q.ashiquechowdhury.androidnekoproject.herofragmentlist;
+package nyc.c4q.ashiquechowdhury.androidnekoproject.spinner.herofragmentlist;
+
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,7 +13,7 @@ import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
 /**
  * Created by Hyun on 12/17/16.
  */
-public class Thor extends Fragment {
+public class HawkEye extends Fragment {
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -30,11 +31,11 @@ public class Thor extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        View view = inflater.inflate(R.layout.thor, container, false);
+        View view = inflater.inflate(R.layout.hawkeye, container, false);
         return view;
     }
-    public static Thor newInstance(){
-        Thor thor = new Thor();
-        return thor;
+    public static HawkEye newInstance(){
+        HawkEye hawkEye = new HawkEye();
+        return hawkEye;
     }
 }

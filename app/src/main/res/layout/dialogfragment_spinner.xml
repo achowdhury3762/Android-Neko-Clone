@@ -5,24 +5,18 @@
     android:layout_width="300dp"
     android:layout_height="wrap_content">
     <ImageView
+        android:id="@+id/hero_dialog_image"
         android:layout_width="match_parent"
         android:layout_height="64dp"
         android:scaleType="center"
-        android:background="@drawable/herodialogpic"
         android:contentDescription="@string/app_name" />
-    <TextView
-        android:text="You've earned"
-        android:textSize="35sp"
-        android:textColor="#000"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="40dp" />
+
     <TextView
         android:id="@+id/spins_TV"
         android:hint="101 spins"
         android:gravity="center"
         android:textColor="#000"
-        android:textSize="35sp"
+        android:textSize="30sp"
         android:layout_width="match_parent"
         android:layout_height="40dp" />
 
