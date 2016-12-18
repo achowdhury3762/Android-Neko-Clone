@@ -14,8 +14,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.herofragmentlist.HawkEye;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.herofragmentlist.Thor;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.spinner.herofragmentlist.Aquaman;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.spinner.herofragmentlist.Batman;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.spinner.herofragmentlist.BlackWidow;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.spinner.herofragmentlist.CaptainAmerica;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.spinner.herofragmentlist.IronMan;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.spinner.herofragmentlist.Superman;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.spinner.herofragmentlist.Thor;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.spinner.herofragmentlist.WonderWoman;
 
 /**
  * Created by Hyun on 12/17/16.
@@ -31,18 +37,32 @@ public class HeroMenuActivity extends AppCompatActivity {
 
         spinMenu = (SpinMenu) findViewById(R.id.spin_menu);
 
-        List<String> spinnerMenu = new ArrayList<>();
-        spinnerMenu.add("THOR");
-        spinnerMenu.add("HAWKEYE");
+        List<String> heroesMenu = new ArrayList<>();
+        heroesMenu.add("AQUAMAN");
+        heroesMenu.add("BATMAN");
+        heroesMenu.add("BLACK WIDOW");
+        heroesMenu.add("CAPTAIN AMERICA");
+        heroesMenu.add("WONDER WOMAN");
+        heroesMenu.add("IRON MAN");
+        heroesMenu.add("THOR");
+        heroesMenu.add("SUPERMAN");
 
-        spinMenu.setHintTextStrList(spinnerMenu);
+
+        spinMenu.setHintTextStrList(heroesMenu);
         spinMenu.setHintTextColor(Color.parseColor("#FFFFFF"));
         spinMenu.setHintTextSize(14);
         spinMenu.setEnableGesture(true);
 
         final List<Fragment> fragmentList = new ArrayList<>();
+        fragmentList.add(Aquaman.newInstance());
+        fragmentList.add(Batman.newInstance());
+        fragmentList.add(BlackWidow.newInstance());
+        fragmentList.add(CaptainAmerica.newInstance());
+        fragmentList.add(WonderWoman.newInstance());
+        fragmentList.add(IronMan.newInstance());
         fragmentList.add(Thor.newInstance());
-        fragmentList.add(HawkEye.newInstance());
+        fragmentList.add(Superman.newInstance());
+
 
         FragmentPagerAdapter fragmentPagerAdapter = new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
@@ -51,8 +71,7 @@ public class HeroMenuActivity extends AppCompatActivity {
             }
 
             @Override
-            public int getCount()
-            {
+            public int getCount() {
                 return fragmentList.size();
             }
         };
@@ -69,4 +88,5 @@ public class HeroMenuActivity extends AppCompatActivity {
             }
         });
     }
+
 }

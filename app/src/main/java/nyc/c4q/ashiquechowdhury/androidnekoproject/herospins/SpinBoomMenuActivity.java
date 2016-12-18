@@ -1,5 +1,6 @@
 package nyc.c4q.ashiquechowdhury.androidnekoproject.herospins;
 
+
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -18,7 +19,6 @@ import nyc.c4q.ashiquechowdhury.androidnekoproject.util.HeroDatabaseHelper;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.util.MySharedPreferences;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.util.RandomNumberChooser;
 
-
 /**
  * Created by ashiquechowdhury on 12/17/16.
  */
@@ -30,7 +30,7 @@ public class SpinBoomMenuActivity extends AppCompatActivity {
     BoomMenuButton bmb1;
     private SQLiteDatabase db;
     int[] heroDrawableArray;
-    int[] heroStringKeyArray;
+    String[] heroStringKeyArray;
 
 
     @Override
@@ -52,16 +52,34 @@ public class SpinBoomMenuActivity extends AppCompatActivity {
                 R.drawable.wonderwoman,
                 R.drawable.thor,
                 R.drawable.superman,
-                R.drawable.spiderman
+                R.drawable.spiderman,
+                R.drawable.greenarrow,
+                R.drawable.hulk
         };
 
-        heroStringKeyArray = new int[]{
-                
-        }
+        heroStringKeyArray = new String[]{
+                MySharedPreferences.AQUAMAN,
+                MySharedPreferences.BATMAN,
+                MySharedPreferences.BLACKWIDOWCOUNT,
+                MySharedPreferences.CAPTAINAMERICACOUNT,
+                MySharedPreferences.CYBORGCOUNT,
+                MySharedPreferences.DAREDEVILCOUNT,
+                MySharedPreferences.HAWKEYECOUNT,
+                MySharedPreferences.GREENLANTERNCOUNT,
+                MySharedPreferences.FLASHCOUNT,
+                MySharedPreferences.NICKFURYCOUNT,
+                MySharedPreferences.BATMAN,
+                MySharedPreferences.WONDERWOMANCOUNT,
+                MySharedPreferences.THORCOUNT,
+                MySharedPreferences.SUPERMANCOUNT,
+                MySharedPreferences.SPIDERMANCOUNT,
+                MySharedPreferences.GREENARROWCOUNT,
+                MySharedPreferences.HULKCOUNT
+        };
 
         Map<Integer, String> heroDrawableMap = new HashMap<>();
         for (int i = 0; i < heroDrawableArray.length; i++) {
-            heroDrawableMap.put(heroDrawableArray[i], )
+            heroDrawableMap.put(heroDrawableArray[i], heroStringKeyArray[i]);
         }
 
         startSQLDataBase();
