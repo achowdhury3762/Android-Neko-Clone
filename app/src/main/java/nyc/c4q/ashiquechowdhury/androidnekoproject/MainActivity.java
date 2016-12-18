@@ -8,7 +8,6 @@ import android.support.v7.app.AppCompatActivity;
 
 
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,4 +23,5 @@ public class MainActivity extends AppCompatActivity {
         AlarmManager alarm = (AlarmManager) this.getSystemService(ALARM_SERVICE);
         alarm.setInexactRepeating(AlarmManager.RTC_WAKEUP, firstMillis, 10L, pendingIntent);
     }
+
 }

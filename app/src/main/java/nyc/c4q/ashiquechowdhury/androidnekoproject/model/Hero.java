@@ -16,10 +16,6 @@ public class Hero {
         count = 0;
     }
 
-    public static Hero chooseRandomHero(){
-        return new Hero("Flash");
-    }
-
     public Long get_id() {
         return _id;
     }
