@@ -19,10 +19,6 @@
         <activity
             android:theme="@style/Theme.Transparent"
             android:name=".allherodisplay.HeroMenuActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity"
@@ -30,7 +26,12 @@
         </activity>
         <activity
             android:name=".herospins.SpinActivity"
-            android:theme="@style/Theme.Transparent" />
+            android:theme="@style/Theme.Transparent" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".herospins.SpinBoomMenuActivity"
             android:theme="@style/Theme.Transparent">

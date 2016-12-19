@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         scheduleAlarm();
-        Toast.makeText(this, "CHECK YOUR NOTIFICATIONS", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "NOTICATIONS BEGINNING", Toast.LENGTH_LONG).show();
         finish();
     }
 

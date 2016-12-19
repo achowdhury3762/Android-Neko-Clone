@@ -58,8 +58,8 @@ public class SpinBoomMenuActivity extends AppCompatActivity {
         };
 
         heroStringKeyArray = new String[]{
-                MySharedPreferences.AQUAMAN,
-                MySharedPreferences.BATMAN,
+                MySharedPreferences.AQUAMANCOUNT,
+                MySharedPreferences.BATMANCOUNT,
                 MySharedPreferences.BLACKWIDOWCOUNT,
                 MySharedPreferences.CAPTAINAMERICACOUNT,
                 MySharedPreferences.CYBORGCOUNT,
@@ -68,7 +68,6 @@ public class SpinBoomMenuActivity extends AppCompatActivity {
                 MySharedPreferences.GREENLANTERNCOUNT,
                 MySharedPreferences.FLASHCOUNT,
                 MySharedPreferences.NICKFURYCOUNT,
-                MySharedPreferences.BATMAN,
                 MySharedPreferences.WONDERWOMANCOUNT,
                 MySharedPreferences.THORCOUNT,
                 MySharedPreferences.SUPERMANCOUNT,
@@ -98,10 +97,12 @@ public class SpinBoomMenuActivity extends AppCompatActivity {
             String randomHeroStringKey = heroStringKeyArray[randNum];
             sharedPrefs.increaseHeroCount(randomHeroStringKey);
 
+            Toast.makeText(SpinBoomMenuActivity.this, String.valueOf(sharedPrefs.getHeroCount(randomHeroStringKey)), Toast.LENGTH_LONG).show();
+
             TextInsideCircleButton.Builder builder = new TextInsideCircleButton.Builder()
                     .normalImageRes(randomHeroDrawable)
                     .buttonRadius(100)
-                    .normalText("Butter Doesn't fly!");
+                    .normalText("Hero Earned!");
             bmb9.addBuilder(builder);
         }
 
@@ -109,7 +110,7 @@ public class SpinBoomMenuActivity extends AppCompatActivity {
             int randNum = RandomNumberChooser.chooseRandomNumber(13);
             TextInsideCircleButton.Builder builder = new TextInsideCircleButton.Builder()
                     .normalImageRes(heroDrawableArray[randNum])
-                    .normalText("Butter Doesn't fly!");
+                    .normalText("Hero Earned!");
             bmb1.addBuilder(builder);
         }
 
@@ -118,15 +119,8 @@ public class SpinBoomMenuActivity extends AppCompatActivity {
             @Override
             public void onBoomWillShow() {
                 super.onBoomWillShow();
-                Toast.makeText(SpinBoomMenuActivity.this, "-1 Spins", Toast.LENGTH_LONG).show();
                 sharedPrefs.decreaseSpinCount(1);
                 setText(topTextView, sharedPrefs.getSpinCount());
-            }
-
-            @Override
-            public void onBoomDidHide() {
-                super.onBoomDidHide();
-                recreate();
             }
         });
 
@@ -134,17 +128,9 @@ public class SpinBoomMenuActivity extends AppCompatActivity {
             @Override
             public void onBoomWillShow() {
                 super.onBoomWillShow();
-                Toast.makeText(SpinBoomMenuActivity.this, "-9 Spins", Toast.LENGTH_LONG).show();
                 sharedPrefs.decreaseSpinCount(9);
                 setText(topTextView, sharedPrefs.getSpinCount());
             }
-
-            @Override
-            public void onBoomDidHide() {
-                super.onBoomDidHide();
-                recreate();
-            }
-
         });
     }
 

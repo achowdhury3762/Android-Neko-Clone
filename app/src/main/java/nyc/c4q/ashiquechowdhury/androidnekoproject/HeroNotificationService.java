@@ -15,6 +15,7 @@ import nyc.c4q.ashiquechowdhury.androidnekoproject.herospins.SpinActivity;
  */
 
 public class HeroNotificationService extends IntentService{
+
     int NOTIFICATION_ID = 555;
 
     public HeroNotificationService() {

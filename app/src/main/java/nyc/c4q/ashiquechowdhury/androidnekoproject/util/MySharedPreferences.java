@@ -11,8 +11,8 @@ public class MySharedPreferences {
     public static MySharedPreferences instance = null;
     SharedPreferences sharedPrefs;
     public static final String SPINCOUNT = "nyc.c4q.ashiquechowdhury.SPINCOUNT";
-    public static final String AQUAMAN = "nyc.c4q.ashiquechowdhury.AQUAMAN";
-    public static final String BATMAN = "nyc.c4q.ashiquechowdhury.BATMAN";
+    public static final String AQUAMANCOUNT = "nyc.c4q.ashiquechowdhury.AQUAMAN";
+    public static final String BATMANCOUNT = "nyc.c4q.ashiquechowdhury.BATMAN";
     public static final String BLACKWIDOWCOUNT = "nyc.c4q.ashiquechowdhury.BLACKWIDOW";
     public static final String CAPTAINAMERICACOUNT = "nyc.c4q.ashiquechowdhury.CAPTAINAMERICA";
     public static final String CYBORGCOUNT = "nyc.c4q.ashiquechowdhury.CYBORG";

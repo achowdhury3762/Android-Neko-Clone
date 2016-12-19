@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Toast;
 
 import com.hitomi.smlibrary.OnSpinMenuStateChangeListener;
 import com.hitomi.smlibrary.SpinMenu;
@@ -67,7 +66,6 @@ public class HeroMenuActivity extends AppCompatActivity {
         FragmentPagerAdapter fragmentPagerAdapter = new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
             public Fragment getItem(int position) {
-                Toast.makeText(HeroMenuActivity.this, String.valueOf(position), Toast.LENGTH_SHORT).show();
                 return fragmentList.get(position);
             }
 
@@ -78,6 +76,7 @@ public class HeroMenuActivity extends AppCompatActivity {
         };
         spinMenu.setFragmentAdapter(fragmentPagerAdapter);
         spinMenu.setOnSpinMenuStateChangeListener(new OnSpinMenuStateChangeListener() {
+
             @Override
             public void onMenuOpened() {
 

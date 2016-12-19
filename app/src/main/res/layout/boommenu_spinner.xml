@@ -31,6 +31,7 @@
     <com.nightonke.boommenu.BoomMenuButton
         android:id="@+id/bmb2"
         app:bmb_buttonRadius="40dp"
+        app:bmb_cacheOptimization="false"
         app:bmb_buttonEnum="textInsideCircle"
         app:bmb_piecePlaceEnum="piecePlace_dot_7_3"
         app:bmb_buttonPlaceEnum="buttonPlace_sc_7_3"

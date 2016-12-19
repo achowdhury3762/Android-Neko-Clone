@@ -13,6 +13,8 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
 
 /**
@@ -21,8 +23,9 @@ import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
 
 public class SpinnerDialogFragment extends DialogFragment {
     private static final String RANDOMNUM = "nyc.c4q.ashiquechowdhury.RANDOMNUM";
-    TextView spinsEarnedText;
-    ImageView heroDialogImage;
+    private static final String HERODIALOG_IMAGE_URL = "https://marvelheroes.com/sites/default/files/slider/images/banner-000.png";
+    @BindView(R.id.hero_dialog_image) ImageView heroDialogImageView;
+    @BindView(R.id.spins_TV) TextView spinsEarnedView;
     private SpinnerDialogListener mListener;
 
     public static SpinnerDialogFragment newInstance(int number) {
@@ -36,14 +39,12 @@ public class SpinnerDialogFragment extends DialogFragment {
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         View dialogView = createDialogView();
+        ButterKnife.bind(this, dialogView);
 
         int randomNumber2to10 = getArguments().getInt(RANDOMNUM);
+        setImageWithPicasso(heroDialogImageView, dialogView.getContext(), HERODIALOG_IMAGE_URL);
 
-        heroDialogImage = (ImageView) dialogView.findViewById(R.id.hero_dialog_image);
-        spinsEarnedText = (TextView) dialogView.findViewById(R.id.spins_TV);
-
-        setImageWithPicasso(heroDialogImage, dialogView);
-        spinsEarnedText.setText(String.valueOf(randomNumber2to10) + " SPINS!");
+        spinsEarnedView.setText(String.valueOf(randomNumber2to10) + " SPINS!");
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setView(dialogView)
@@ -68,9 +69,9 @@ public class SpinnerDialogFragment extends DialogFragment {
         return inflater.inflate(R.layout.dialogfragment_spinner, null);
     }
 
-    public void setImageWithPicasso(ImageView herodialogImageView, View view) {
-        Picasso.with(view.getContext())
-                .load("https://ae01.alicdn.com/kf/HTB1o3REHFXXXXckXpXXq6xXFXXXD/Free-shipping-font-b-Justice-b-font-font-b-League-b-font-font-b-logo-b.jpg")
+    public void setImageWithPicasso(ImageView herodialogImageView, Context context, String imageURL) {
+        Picasso.with(context)
+                .load(imageURL)
                 .fit()
                 .into(herodialogImageView);
     }
@@ -90,9 +91,5 @@ public class SpinnerDialogFragment extends DialogFragment {
     @Override
     public void onDismiss(DialogInterface dialog) {
         getActivity().finish();
-    }
-
-    void addRandomSpinsToTotal(int number) {
-
     }
 }
