@@ -9,6 +9,8 @@ import com.nightonke.boommenu.BoomButtons.TextInsideCircleButton;
 import com.nightonke.boommenu.BoomMenuButton;
 import com.nightonke.boommenu.OnBoomListenerAdapter;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.usehero.model.Hero;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.util.MySharedPreferences;
@@ -19,18 +21,16 @@ import nyc.c4q.ashiquechowdhury.androidnekoproject.util.RandomNumberChooser;
  */
 
 public class UseHeroesActivity extends AppCompatActivity {
+    @BindView(R.id.total_hero_tView) TextView totalHeroesTView;
+    @BindView(R.id.bmb) BoomMenuButton nineMenuButton;
+    @BindView(R.id.bmb2) BoomMenuButton oneMenuButton;
     MySharedPreferences sharedPrefs;
-    TextView topTextView;
-    BoomMenuButton nineMenuButton;
-    BoomMenuButton oneMeneButton;
-    int[] heroDrawableArray;
-    String[] heroStringKeyArray;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.boommenu_spinner);
+        ButterKnife.bind(this);
 
         Hero[] myHeroes = new Hero[16];
         myHeroes[0] = new Hero("AQUAMAN", R.drawable.aquaman);
@@ -50,14 +50,9 @@ public class UseHeroesActivity extends AppCompatActivity {
         myHeroes[14] = new Hero("GREENARROW", R.drawable.greenarrow);
         myHeroes[15] = new Hero("HULK", R.drawable.hulk);
 
-        topTextView = (TextView) findViewById(R.id.total_spin_tView);
-        nineMenuButton = (BoomMenuButton) findViewById(R.id.bmb);
-        oneMeneButton = (BoomMenuButton) findViewById(R.id.bmb2);
-
         sharedPrefs = MySharedPreferences.getInstance(getApplicationContext());
 
-        setText(topTextView, sharedPrefs.getTotalHeroCount());
-
+        setText(totalHeroesTView, sharedPrefs.getTotalHeroCount());
         for (int i = 0; i < nineMenuButton.getPiecePlaceEnum().pieceNumber(); i++) {
             int randNum = RandomNumberChooser.chooseRandomNumber(15);
             Hero randomHero = myHeroes[randNum];
@@ -69,13 +64,13 @@ public class UseHeroesActivity extends AppCompatActivity {
             nineMenuButton.addBuilder(builder);
         }
 
-        for (int i = 0; i < oneMeneButton.getPiecePlaceEnum().pieceNumber(); i++) {
+        for (int i = 0; i < oneMenuButton.getPiecePlaceEnum().pieceNumber(); i++) {
             int randNum = RandomNumberChooser.chooseRandomNumber(15);
             Hero randomHero = myHeroes[randNum];
             TextInsideCircleButton.Builder builder = new TextInsideCircleButton.Builder()
                     .normalImageRes(randomHero.getDrawable())
                     .normalText("Hero Earned!");
-            oneMeneButton.addBuilder(builder);
+            oneMenuButton.addBuilder(builder);
         }
 
 
@@ -84,16 +79,16 @@ public class UseHeroesActivity extends AppCompatActivity {
             public void onBoomWillShow() {
                 super.onBoomWillShow();
                 sharedPrefs.decreaseTotalHeroCount(1);
-                setText(topTextView, sharedPrefs.getTotalHeroCount());
+                setText(totalHeroesTView, sharedPrefs.getTotalHeroCount());
             }
         });
 
-        oneMeneButton.setOnBoomListener(new OnBoomListenerAdapter() {
+        oneMenuButton.setOnBoomListener(new OnBoomListenerAdapter() {
             @Override
             public void onBoomWillShow() {
                 super.onBoomWillShow();
                 sharedPrefs.decreaseTotalHeroCount(9);
-                setText(topTextView, sharedPrefs.getTotalHeroCount());
+                setText(totalHeroesTView, sharedPrefs.getTotalHeroCount());
             }
         });
     }

@@ -8,7 +8,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/total_spin_tView"
+        android:id="@+id/total_hero_tView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -31,7 +31,6 @@
     <com.nightonke.boommenu.BoomMenuButton
         android:id="@+id/bmb2"
         app:bmb_buttonRadius="40dp"
-        app:bmb_cacheOptimization="false"
         app:bmb_buttonEnum="textInsideCircle"
         app:bmb_piecePlaceEnum="piecePlace_dot_7_3"
         app:bmb_buttonPlaceEnum="buttonPlace_sc_7_3"
