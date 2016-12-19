@@ -1,4 +1,4 @@
-package nyc.c4q.ashiquechowdhury.androidnekoproject.herofragments;
+package nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,7 +12,7 @@ import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
 /**
  * Created by Hyun on 12/18/16.
  */
-public class GreenLantern extends Fragment {
+public class TheFlash extends Fragment {
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -30,11 +30,11 @@ public class GreenLantern extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        View view = inflater.inflate(R.layout.greenlantern, container, false);
+        View view = inflater.inflate(R.layout.theflash, container, false);
         return view;
     }
-    public static GreenLantern newInstance(){
-        GreenLantern greenLantern = new GreenLantern();
-        return greenLantern;
+    public static TheFlash newInstance(){
+        TheFlash theFlash = new TheFlash();
+        return theFlash;
     }
 }

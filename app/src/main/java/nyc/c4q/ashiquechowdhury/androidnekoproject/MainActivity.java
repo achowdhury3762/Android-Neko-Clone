@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
+import nyc.c4q.ashiquechowdhury.androidnekoproject.startofftodialog.MyAlarmReceiver;
+
 
 public class MainActivity extends AppCompatActivity {
     @Override

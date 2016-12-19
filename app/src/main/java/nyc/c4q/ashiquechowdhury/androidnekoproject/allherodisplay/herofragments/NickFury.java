@@ -1,5 +1,4 @@
-package nyc.c4q.ashiquechowdhury.androidnekoproject.herofragments;
-
+package nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -11,9 +10,9 @@ import android.view.ViewGroup;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
 
 /**
- * Created by Hyun on 12/17/16.
+ * Created by Hyun on 12/18/16.
  */
-public class HawkEye extends Fragment {
+public class NickFury extends Fragment {
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -31,11 +30,11 @@ public class HawkEye extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        View view = inflater.inflate(R.layout.hawkeye, container, false);
+        View view = inflater.inflate(R.layout.nickfury, container, false);
         return view;
     }
-    public static HawkEye newInstance(){
-        HawkEye hawkEye = new HawkEye();
-        return hawkEye;
+    public static NickFury newInstance(){
+        NickFury nickFury = new NickFury();
+        return nickFury;
     }
 }

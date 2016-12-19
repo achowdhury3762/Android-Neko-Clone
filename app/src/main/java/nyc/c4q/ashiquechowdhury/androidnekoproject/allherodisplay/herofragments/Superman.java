@@ -1,4 +1,4 @@
-package nyc.c4q.ashiquechowdhury.androidnekoproject.herofragments;
+package nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,7 +12,7 @@ import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
 /**
  * Created by Hyun on 12/18/16.
  */
-public class WonderWoman extends Fragment {
+public class Superman extends Fragment {
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -30,11 +30,11 @@ public class WonderWoman extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        View view = inflater.inflate(R.layout.wonderwoman, container, false);
+        View view = inflater.inflate(R.layout.superman, container, false);
         return view;
     }
-    public static WonderWoman newInstance(){
-        WonderWoman wonderWoman = new WonderWoman();
-        return wonderWoman;
+    public static Superman newInstance(){
+        Superman superman = new Superman();
+        return superman;
     }
 }
