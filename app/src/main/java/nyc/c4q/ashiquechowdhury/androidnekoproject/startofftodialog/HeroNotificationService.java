@@ -1,4 +1,4 @@
-package nyc.c4q.ashiquechowdhury.androidnekoproject;
+package nyc.c4q.ashiquechowdhury.androidnekoproject.startofftodialog;
 
 import android.app.IntentService;
 import android.app.Notification;
@@ -8,7 +8,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.NotificationCompat;
 
-import nyc.c4q.ashiquechowdhury.androidnekoproject.herospins.SpinActivity;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.herodialog.HeroDialogChoiceActivity;
 
 /**
  * Created by ashiquechowdhury on 12/12/16.
@@ -25,7 +26,7 @@ public class HeroNotificationService extends IntentService{
     @Override
     protected void onHandleIntent(Intent intent) {
         int requestId = (int) System.currentTimeMillis();
-        Intent myIntent = new Intent(this, SpinActivity.class);
+        Intent myIntent = new Intent(this, HeroDialogChoiceActivity.class);
 
         PendingIntent pendingIntent = PendingIntent.getActivity(this, requestId, myIntent, PendingIntent.FLAG_CANCEL_CURRENT);
         Notification notification = new NotificationCompat.Builder(this)

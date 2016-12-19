@@ -1,4 +1,4 @@
-package nyc.c4q.ashiquechowdhury.androidnekoproject.herofragments;
+package nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -10,9 +10,9 @@ import android.view.ViewGroup;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
 
 /**
- * Created by Hyun on 12/18/16.
+ * Created by Hyun on 12/17/16.
  */
-public class BlackWidow extends Fragment {
+public class Thor extends Fragment {
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -30,11 +30,11 @@ public class BlackWidow extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        View view = inflater.inflate(R.layout.blackwidow, container, false);
+        View view = inflater.inflate(R.layout.thor, container, false);
         return view;
     }
-    public static BlackWidow newInstance(){
-        BlackWidow blackWidow = new BlackWidow();
-        return blackWidow;
+    public static Thor newInstance(){
+        Thor thor = new Thor();
+        return thor;
     }
 }

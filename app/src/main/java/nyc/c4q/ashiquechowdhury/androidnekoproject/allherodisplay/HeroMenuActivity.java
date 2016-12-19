@@ -13,14 +13,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.herofragments.Aquaman;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.herofragments.Batman;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.herofragments.BlackWidow;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.herofragments.CaptainAmerica;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.herofragments.IronMan;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.herofragments.Superman;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.herofragments.Thor;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.herofragments.WonderWoman;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.Aquaman;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.Batman;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.BlackWidow;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.CaptainAmerica;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.IronMan;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.Superman;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.Thor;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.WonderWoman;
 
 /**
  * Created by Hyun on 12/17/16.

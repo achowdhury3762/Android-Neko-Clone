@@ -10,7 +10,7 @@ import android.preference.PreferenceManager;
 public class MySharedPreferences {
     public static MySharedPreferences instance = null;
     SharedPreferences sharedPrefs;
-    public static final String SPINCOUNT = "nyc.c4q.ashiquechowdhury.SPINCOUNT";
+    public static final String TOTALHEROCOUNT = "nyc.c4q.ashiquechowdhury.TOTALHEROCOUNT";
     public static final String AQUAMANCOUNT = "nyc.c4q.ashiquechowdhury.AQUAMAN";
     public static final String BATMANCOUNT = "nyc.c4q.ashiquechowdhury.BATMAN";
     public static final String BLACKWIDOWCOUNT = "nyc.c4q.ashiquechowdhury.BLACKWIDOW";
@@ -40,28 +40,20 @@ public class MySharedPreferences {
         return instance;
     }
 
-    public int getSpinCount(){
-        return sharedPrefs.getInt(SPINCOUNT, 0);
-    }
-    public int getHeroCount(String sharedPrefKey){
-        return sharedPrefs.getInt(sharedPrefKey, 0);
+    public int getTotalHeroCount(){
+        return sharedPrefs.getInt(TOTALHEROCOUNT, 1000000000);
     }
 
-    public void increaseSpinCount(int number){
+    public void increaseTotalHeroCount(int number){
         SharedPreferences.Editor editor = sharedPrefs.edit();
-        editor.putInt(SPINCOUNT, getSpinCount() + number);
+        editor.putInt(TOTALHEROCOUNT, getTotalHeroCount() + number);
         editor.commit();
     }
 
-    public void decreaseSpinCount(int number) {
+    public void decreaseTotalHeroCount(int number) {
         SharedPreferences.Editor editor = sharedPrefs.edit();
-        editor.putInt(SPINCOUNT, getSpinCount() - number);
+        editor.putInt(TOTALHEROCOUNT, getTotalHeroCount() - number);
         editor.commit();
     }
 
-    public void increaseHeroCount(String SharedPrefKey){
-        SharedPreferences.Editor editor = sharedPrefs.edit();
-        editor.putInt(SharedPrefKey, getHeroCount(SharedPrefKey));
-        editor.commit();
-    }
 }

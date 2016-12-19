@@ -12,9 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <receiver android:name=".MyAlarmReceiver" />
+        <receiver android:name=".startofftodialog.MyAlarmReceiver" />
 
-        <service android:name=".HeroNotificationService" />
+        <service android:name=".startofftodialog.HeroNotificationService" />
 
         <activity
             android:theme="@style/Theme.Transparent"
@@ -25,7 +25,7 @@
             android:theme="@style/Theme.Transparent">
         </activity>
         <activity
-            android:name=".herospins.SpinActivity"
+            android:name=".herodialog.HeroDialogChoiceActivity"
             android:theme="@style/Theme.Transparent" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,7 +33,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".herospins.SpinBoomMenuActivity"
+            android:name=".usehero.UseHeroesActivity"
             android:theme="@style/Theme.Transparent">
         </activity>
 
