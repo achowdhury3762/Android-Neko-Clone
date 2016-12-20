@@ -40,22 +40,22 @@ public class UseHeroesActivity extends AppCompatActivity {
         sharedPrefs = MySharedPreferences.getInstance(getApplicationContext());
 
         myHeroes = new Hero[16];
-        myHeroes[0] = new Hero("AQUAMAN", R.drawable.aquaman);
-        myHeroes[1] = new Hero("BATMAN", R.drawable.aquaman);
-        myHeroes[2] = new Hero("BLACKWIDOW", R.drawable.blackwidow);
-        myHeroes[3] = new Hero("CAPTAINAMERICA", R.drawable.captainamerica);
-        myHeroes[4] = new Hero("CYBORG", R.drawable.aquaman);
-        myHeroes[5] = new Hero("DAREDEVIL", R.drawable.daredevil);
-        myHeroes[6] = new Hero("HAWKEYE", R.drawable.hawkeye);
-        myHeroes[7] = new Hero("GREENLANTERN", R.drawable.greenlantern);
-        myHeroes[8] = new Hero("FLASH", R.drawable.flash);
+        myHeroes[0] = new Hero("AQUAMAN", R.drawable.aquaman_icon);
+        myHeroes[1] = new Hero("BATMAN", R.drawable.aquaman_icon);
+        myHeroes[2] = new Hero("BLACKWIDOW", R.drawable.blackwidow_icon);
+        myHeroes[3] = new Hero("CAPTAINAMERICA", R.drawable.captainamerica_icon);
+        myHeroes[4] = new Hero("CYBORG", R.drawable.aquaman_icon);
+        myHeroes[5] = new Hero("DAREDEVIL", R.drawable.daredevil_icon);
+        myHeroes[6] = new Hero("HAWKEYE", R.drawable.hawkeye_icon);
+        myHeroes[7] = new Hero("GREENLANTERN", R.drawable.greenlantern_icon);
+        myHeroes[8] = new Hero("FLASH", R.drawable.flash_icon);
         myHeroes[9] = new Hero("NICKFURY", R.drawable.nickfury_icon);
         myHeroes[10] = new Hero("WONDERWOMAN", R.drawable.wonderwoman_icon);
         myHeroes[11] = new Hero("THOR", R.drawable.thor_icon);
         myHeroes[12] = new Hero("SUPERMAN", R.drawable.superman_icon);
         myHeroes[13] = new Hero("SPIDERMAN", R.drawable.spiderman_icon);
-        myHeroes[14] = new Hero("GREENARROW", R.drawable.greenarrow);
-        myHeroes[15] = new Hero("HULK", R.drawable.hulk);
+        myHeroes[14] = new Hero("GREENARROW", R.drawable.greenarrow_icon);
+        myHeroes[15] = new Hero("HULK", R.drawable.hulk_icon);
 
         setTotalHeroText(totalHeroesTView, sharedPrefs.getTotalHeroCount());
 
