@@ -8,11 +8,11 @@
     app:hint_text_size="14sp"
     app:scale_ratio="0.36">
 
-    <FrameLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#98A9A9A9"
         >
-    </FrameLayout>
+    </RelativeLayout>
 
 </com.hitomi.smlibrary.SpinMenu>
