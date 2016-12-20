@@ -17,6 +17,11 @@
         <service android:name=".HeroNotificationService" />
 
         <activity
+            android:name=".allherodisplay.HeroMenuActivity"
+            android:theme="@style/Theme.Transparent">
+
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.Transparent">
             <intent-filter>
@@ -24,9 +29,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".spinner.HeroMenuActivity"></activity>
-
         <activity
             android:name=".herospins.SpinActivity"
             android:theme="@style/Theme.Transparent" />
@@ -34,6 +36,7 @@
             android:name=".herospins.SpinBoomMenuActivity"
             android:theme="@style/Theme.Transparent">
         </activity>
+
     </application>
 
 </manifest>

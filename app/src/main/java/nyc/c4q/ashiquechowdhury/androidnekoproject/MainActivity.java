@@ -5,17 +5,16 @@ import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Intent intent = new Intent(this, HeroNotificationService.class);
-        startService(intent);
         scheduleAlarm();
+        Toast.makeText(this, "CHECK YOUR NOTIFICATIONS", Toast.LENGTH_LONG).show();
         finish();
     }
 
@@ -26,4 +25,5 @@ public class MainActivity extends AppCompatActivity {
         AlarmManager alarm = (AlarmManager) this.getSystemService(ALARM_SERVICE);
         alarm.setInexactRepeating(AlarmManager.RTC_WAKEUP, firstMillis, 10L, pendingIntent);
     }
+
 }
