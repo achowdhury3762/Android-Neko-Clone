@@ -7,9 +7,9 @@
     <ImageView
         android:id="@+id/hero_dialog_image"
         android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
         android:layout_height="64dp"
-        android:scaleType="center"
-        android:contentDescription="@string/app_name" />
+        />
 
     <TextView
         android:id="@+id/spins_TV"

@@ -1,4 +1,4 @@
-package nyc.c4q.ashiquechowdhury.androidnekoproject;
+package nyc.c4q.ashiquechowdhury.androidnekoproject.startofftodialog;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
