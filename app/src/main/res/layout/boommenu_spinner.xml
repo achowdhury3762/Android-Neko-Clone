@@ -17,7 +17,7 @@
         />
 
     <com.nightonke.boommenu.BoomMenuButton
-        android:id="@+id/bmb"
+        android:id="@+id/bmb2"
         app:bmb_buttonRadius="40dp"
         app:bmb_buttonEnum="textInsideCircle"
         app:bmb_piecePlaceEnum="piecePlace_dot_1"
@@ -26,17 +26,18 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_marginLeft="40dp"
-        android:layout_alignParentStart="true"></com.nightonke.boommenu.BoomMenuButton>
+        android:layout_alignParentStart="true">
+    </com.nightonke.boommenu.BoomMenuButton>
 
     <com.nightonke.boommenu.BoomMenuButton
-        android:id="@+id/bmb2"
+        android:id="@+id/bmb"
         app:bmb_buttonRadius="40dp"
         app:bmb_buttonEnum="textInsideCircle"
         app:bmb_piecePlaceEnum="piecePlace_dot_7_3"
         app:bmb_buttonPlaceEnum="buttonPlace_sc_7_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/bmb"
+        android:layout_alignTop="@+id/bmb2"
         android:layout_marginRight="40dp"
         android:layout_alignParentEnd="true">
     </com.nightonke.boommenu.BoomMenuButton>
