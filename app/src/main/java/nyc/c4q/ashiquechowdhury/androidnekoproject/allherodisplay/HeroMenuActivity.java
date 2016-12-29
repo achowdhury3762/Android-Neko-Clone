@@ -36,6 +36,7 @@ public class HeroMenuActivity extends AppCompatActivity {
 
         spinMenu = (SpinMenu) findViewById(R.id.spin_menu);
 
+        //Should be in abc order
         List<String> heroesMenu = new ArrayList<>();
         heroesMenu.add("AQUAMAN");
         heroesMenu.add("BATMAN");
@@ -49,7 +50,7 @@ public class HeroMenuActivity extends AppCompatActivity {
 
         spinMenu.setHintTextStrList(heroesMenu);
         spinMenu.setHintTextColor(Color.parseColor("#FFFFFF"));
-        spinMenu.setHintTextSize(14);
+        spinMenu.setHintTextSize(19);
         spinMenu.setEnableGesture(true);
 
         final List<Fragment> fragmentList = new ArrayList<>();

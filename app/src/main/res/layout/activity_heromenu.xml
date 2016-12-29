@@ -13,6 +13,14 @@
         android:layout_height="match_parent"
         android:background="#98A9A9A9"
         >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:text="Count : 150"
+            android:gravity="center"
+            android:textSize="70sp"
+            />
     </RelativeLayout>
 
 </com.hitomi.smlibrary.SpinMenu>
