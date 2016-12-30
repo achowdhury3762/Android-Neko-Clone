@@ -33,6 +33,8 @@ public class HeroDialogFragment extends DialogFragment {
 
     private SpinnerDialogListener mListener;
     private MySharedPreferences sharedPreferences;
+    private AlertDialog.Builder builder;
+    private AlertDialog myAlertDialog;
 
     public static HeroDialogFragment newInstance() {
         return new HeroDialogFragment();
@@ -48,7 +50,11 @@ public class HeroDialogFragment extends DialogFragment {
         int heroesEarned = getUserEarnedHeroes();
         spinsEarnedView.setText(String.valueOf(heroesEarned) + " HEROES!");
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder = new AlertDialog.Builder(getActivity());
+        return alertBuilder(builder);
+    }
+
+    private AlertDialog alertBuilder(AlertDialog.Builder builder) {
         builder.setMessage("You've Earned")
                 .setPositiveButton(R.string.use_spinner, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
@@ -59,14 +65,9 @@ public class HeroDialogFragment extends DialogFragment {
                     public void onClick(DialogInterface dialog, int id) {
                         mListener.onDialogNeutralClick(HeroDialogFragment.this);
                     }
-                })
-                .setNegativeButton(R.string.hero_overview, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        mListener.onDialogNegativeClick(HeroDialogFragment.this);
-                    }
                 });
 
-        AlertDialog myAlertDialog = builder.create();
+        myAlertDialog = builder.create();
         return myAlertDialog;
     }
 

@@ -40,30 +40,9 @@ public class MyHeroesOne extends AppCompatActivity {
         initViews();
         addHeroes();
         addFirstEightFragments();
+        fragmentPA();
 
-        fragmentPagerAdapter = new FragmentPagerAdapter(getSupportFragmentManager()) {
-            @Override
-            public Fragment getItem(int position) {
-                return fragmentList.get(position);
-            }
-
-            @Override
-            public int getCount() {
-                return fragmentList.size();
-            }
-        };
-        spinMenu.setFragmentAdapter(fragmentPagerAdapter);
-        spinMenu.setOnSpinMenuStateChangeListener(new OnSpinMenuStateChangeListener() {
-            @Override
-            public void onMenuOpened() {
-            }
-
-            @Override
-            public void onMenuClosed() {
-            }
-        });
     }
-
     private void initViews() {
         spinMenu = (SpinMenu) findViewById(R.id.firstview_spin);
         spinMenu.setHintTextStrList(heroesMenu);
@@ -92,5 +71,31 @@ public class MyHeroesOne extends AppCompatActivity {
         fragmentList.add(IronMan.newInstance());
         fragmentList.add(Thor.newInstance());
         fragmentList.add(Superman.newInstance());
+    }
+
+    private void fragmentPA() {
+        fragmentPagerAdapter = new FragmentPagerAdapter(getSupportFragmentManager()) {
+            @Override
+            public Fragment getItem(int position) {
+                return fragmentList.get(position);
+            }
+            @Override
+            public int getCount() {
+                return fragmentList.size();
+            }
+        };
+        setSpinMenu(fragmentPagerAdapter);
+    }
+
+    private void setSpinMenu(FragmentPagerAdapter fragmentPagerAdapter) {
+        spinMenu.setFragmentAdapter(fragmentPagerAdapter);
+        spinMenu.setOnSpinMenuStateChangeListener(new OnSpinMenuStateChangeListener() {
+            @Override
+            public void onMenuOpened() {
+            }
+            @Override
+            public void onMenuClosed() {
+            }
+        });
     }
 }

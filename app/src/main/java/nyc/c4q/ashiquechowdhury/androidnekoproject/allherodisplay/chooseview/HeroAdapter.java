@@ -15,7 +15,6 @@ import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
 public class HeroAdapter extends RecyclerView.Adapter<HeroViewHolder> {
 
     private List<Integer> heroView;
-    private View view;
 
     public HeroAdapter(List<Integer> heroView) {
         this.heroView = heroView;
@@ -24,7 +23,7 @@ public class HeroAdapter extends RecyclerView.Adapter<HeroViewHolder> {
     @Override
     public HeroViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        view = inflater.inflate(R.layout.hero_viewholder,parent,false);
+        View view = inflater.inflate(R.layout.hero_viewholder,parent,false);
         return new HeroViewHolder(view);
     }
 

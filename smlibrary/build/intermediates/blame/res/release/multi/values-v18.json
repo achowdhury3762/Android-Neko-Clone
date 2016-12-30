@@ -1,53 +1,5 @@
 [
     {
-        "outputFile": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v18/values-v18.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 48,
-                    "endOffset": 99
-                },
-                "from": {
-                    "file": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v18/values-v18.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 48,
-                        "endOffset": 99
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v18/values-v18.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 48,
-                    "endOffset": 99
-                },
-                "from": {
-                    "file": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v18/values-v18.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 48,
-                        "endOffset": 99
-                    }
-                }
-            }
-        ]
-    },
-    {
         "outputFile": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v18/values-v18.xml",
         "map": [
             {

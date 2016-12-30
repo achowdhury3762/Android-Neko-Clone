@@ -36,30 +36,12 @@ public class MyHeroesTwo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.secondview_layout);
+
         initViews();
         addHeroes();
         addSecondEightFragments();
+        fragmentPA2();
 
-        fragmentPagerAdapter2 = new FragmentPagerAdapter(getSupportFragmentManager()) {
-            @Override
-            public Fragment getItem(int position) {
-                return fragmentList2.get(position);
-            }
-
-            @Override
-            public int getCount() {
-                return fragmentList2.size();
-            }
-        };
-        spinMenu2.setFragmentAdapter(fragmentPagerAdapter2);
-        spinMenu2.setOnSpinMenuStateChangeListener(new OnSpinMenuStateChangeListener() {
-            @Override
-            public void onMenuOpened() {
-            }
-            @Override
-            public void onMenuClosed() {
-            }
-        });
     }
 
     private void initViews() {
@@ -71,24 +53,50 @@ public class MyHeroesTwo extends AppCompatActivity {
     }
 
     private void addHeroes() {
-        heroesMenu2.add("CYBORG");  
+        heroesMenu2.add("CYBORG");
         heroesMenu2.add("DAREDEVIL");
-          heroesMenu2.add("GREEN ARROW");  
-        heroesMenu2.add("GREEN LANTERN");  
-        heroesMenu2.add("HAWKEYE");  
-        heroesMenu2.add("HULK");  
-        heroesMenu2.add("SPIDERMAN");  
+        heroesMenu2.add("GREEN ARROW");
+        heroesMenu2.add("GREEN LANTERN");
+        heroesMenu2.add("HAWKEYE");
+        heroesMenu2.add("HULK");
+        heroesMenu2.add("SPIDERMAN");
         heroesMenu2.add("THE FLASH");
     }
 
     private void addSecondEightFragments() {
-        fragmentList2.add(Cyborg.newInstance());  
-        fragmentList2.add(DareDevil.newInstance());  
-        fragmentList2.add(GreenArrow.newInstance());  
-        fragmentList2.add(GreenLantern.newInstance());  
-        fragmentList2.add(HawkEye.newInstance());  
-        fragmentList2.add(Hulk.newInstance());  
+        fragmentList2.add(Cyborg.newInstance());
+        fragmentList2.add(DareDevil.newInstance());
+        fragmentList2.add(GreenArrow.newInstance());
+        fragmentList2.add(GreenLantern.newInstance());
+        fragmentList2.add(HawkEye.newInstance());
+        fragmentList2.add(Hulk.newInstance());
         fragmentList2.add(Spiderman.newInstance());
-          fragmentList2.add(TheFlash.newInstance());
+        fragmentList2.add(TheFlash.newInstance());
+    }
+
+    private void fragmentPA2() {
+        fragmentPagerAdapter2 = new FragmentPagerAdapter(getSupportFragmentManager()) {
+            @Override
+            public Fragment getItem(int position) {
+                return fragmentList2.get(position);
+            }
+            @Override
+            public int getCount() {
+                return fragmentList2.size();
+            }
+        };
+        setSpinMenu2(fragmentPagerAdapter2);
+    }
+
+    private void setSpinMenu2(FragmentPagerAdapter fragmentPagerAdapter2) {
+        spinMenu2.setFragmentAdapter(fragmentPagerAdapter2);
+        spinMenu2.setOnSpinMenuStateChangeListener(new OnSpinMenuStateChangeListener() {
+            @Override
+            public void onMenuOpened() {
+            }
+            @Override
+            public void onMenuClosed() {
+            }
+        });
     }
 }

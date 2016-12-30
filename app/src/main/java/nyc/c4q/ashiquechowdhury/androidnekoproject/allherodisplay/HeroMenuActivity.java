@@ -1,18 +1,21 @@
 package nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.HeroAdapter;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.HeroIcons;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.MyHeroesOne;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.MyHeroesTwo;
 
 /**
  * Created by Hyun on 12/17/16.
@@ -20,7 +23,6 @@ import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.Her
 public class HeroMenuActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button herobtnOne, herobtnTwo;
-
     private RecyclerView mRecycler;
     private List<Integer> heroIcons = new ArrayList<>();
 
@@ -50,8 +52,13 @@ public class HeroMenuActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.herobtn1:
+                Intent intentOne = new Intent(this, MyHeroesOne.class);
+                startActivity(intentOne);
+                break;
             case R.id.herobtn2:
-                Toast.makeText(getParent(), "button clicked", Toast.LENGTH_LONG).show();
+                Intent intentTwo = new Intent(this, MyHeroesTwo.class);
+                startActivity(intentTwo);
+                break;
         }
     }
 }

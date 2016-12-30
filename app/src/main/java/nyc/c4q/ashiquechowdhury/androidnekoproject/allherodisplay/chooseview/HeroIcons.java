@@ -1,4 +1,4 @@
-package nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay;
+package nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview;
 
 import java.util.ArrayList;
 import java.util.List;

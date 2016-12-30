@@ -36,10 +36,4 @@ public class HeroDialogChoiceActivity extends FragmentActivity implements Spinne
         Intent intent = new Intent(this, HeroMenuActivity.class);
         startActivity(intent);
     }
-
-    @Override
-    public void onDialogNegativeClick(DialogFragment dialog) {
-        Intent intent = new Intent(this, HeroMenuActivity.class);
-        startActivity(intent);
-    }
 }

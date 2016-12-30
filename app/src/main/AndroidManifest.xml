@@ -17,23 +17,17 @@
         <service android:name=".startofftodialog.HeroNotificationService" />
 
         <activity
-<<<<<<< HEAD
             android:name=".allherodisplay.HeroMenuActivity"
             android:theme="@style/Theme.TransparentHero">
-=======
-            android:theme="@style/Theme.Transparent"
-            android:name=".allherodisplay.HeroMenuActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
->>>>>>> 0ef36db0ec1c92caf16005207d2b4ba72c7fe899
+        </activity>
+
+        <activity
+            android:name=".allherodisplay.chooseview.MyHeroesOne"
+            android:theme="@style/Theme.Transparent">
         </activity>
         <activity
-            android:name=".allherodisplay.chooseview.MyHeroesOne">
-        </activity>
-        <activity
-            android:name=".allherodisplay.chooseview.MyHeroesTwo">
+            android:name=".allherodisplay.chooseview.MyHeroesTwo"
+            android:theme="@style/Theme.Transparent">
         </activity>
         
         <activity
