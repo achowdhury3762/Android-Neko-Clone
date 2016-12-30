@@ -1,4 +1,4 @@
-package nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments;
+package nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.spinmenuview.herofragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,17 +9,17 @@ import android.view.ViewGroup;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
 
 /**
- * Created by Hyun on 12/17/16.
+ * Created by Hyun on 12/18/16.
  */
-public class Thor extends Fragment {
+public class TheFlash extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        View view = inflater.inflate(R.layout.thor, container, false);
+        View view = inflater.inflate(R.layout.theflash, container, false);
         return view;
     }
-    public static Thor newInstance(){
-        Thor thor = new Thor();
-        return thor;
+    public static TheFlash newInstance(){
+        TheFlash theFlash = new TheFlash();
+        return theFlash;
     }
 }

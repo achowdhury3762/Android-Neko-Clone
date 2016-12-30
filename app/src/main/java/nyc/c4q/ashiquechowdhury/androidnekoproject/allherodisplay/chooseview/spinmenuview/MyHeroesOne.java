@@ -1,4 +1,4 @@
-package nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview;
+package nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.spinmenuview;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -13,14 +13,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.Aquaman;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.Batman;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.BlackWidow;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.CaptainAmerica;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.IronMan;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.Superman;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.Thor;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.WonderWoman;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.spinmenuview.herofragments.Aquaman;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.spinmenuview.herofragments.Batman;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.spinmenuview.herofragments.BlackWidow;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.spinmenuview.herofragments.CaptainAmerica;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.spinmenuview.herofragments.IronMan;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.spinmenuview.herofragments.Superman;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.spinmenuview.herofragments.Thor;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.spinmenuview.herofragments.WonderWoman;
 
 /**
  * Created by Hyun on 12/29/16.

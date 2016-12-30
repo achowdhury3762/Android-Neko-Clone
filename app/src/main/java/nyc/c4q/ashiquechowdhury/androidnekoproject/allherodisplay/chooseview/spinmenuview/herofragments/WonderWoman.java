@@ -1,4 +1,4 @@
-package nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments;
+package nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.spinmenuview.herofragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,15 +11,15 @@ import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
 /**
  * Created by Hyun on 12/18/16.
  */
-public class Cyborg extends Fragment {
+public class WonderWoman extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        View view = inflater.inflate(R.layout.cyborg, container, false);
+        View view = inflater.inflate(R.layout.wonderwoman, container, false);
         return view;
     }
-    public static Cyborg newInstance(){
-        Cyborg cyborg = new Cyborg();
-        return cyborg;
+    public static WonderWoman newInstance(){
+        WonderWoman wonderWoman = new WonderWoman();
+        return wonderWoman;
     }
 }

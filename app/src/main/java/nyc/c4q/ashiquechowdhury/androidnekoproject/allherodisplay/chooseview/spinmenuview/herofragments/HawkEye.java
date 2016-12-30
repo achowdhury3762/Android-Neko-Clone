@@ -1,4 +1,5 @@
-package nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments;
+package nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.spinmenuview.herofragments;
+
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,17 +10,17 @@ import android.view.ViewGroup;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
 
 /**
- * Created by Hyun on 12/18/16.
+ * Created by Hyun on 12/17/16.
  */
-public class BlackWidow extends Fragment {
+public class HawkEye extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        View view = inflater.inflate(R.layout.blackwidow, container, false);
+        View view = inflater.inflate(R.layout.hawkeye, container, false);
         return view;
     }
-    public static BlackWidow newInstance(){
-        BlackWidow blackWidow = new BlackWidow();
-        return blackWidow;
+    public static HawkEye newInstance(){
+        HawkEye hawkEye = new HawkEye();
+        return hawkEye;
     }
 }

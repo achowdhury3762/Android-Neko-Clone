@@ -21,10 +21,10 @@
             android:theme="@style/Theme.TransparentHero"></activity>
 
         <activity
-            android:name=".allherodisplay.chooseview.MyHeroesOne"
+            android:name=".allherodisplay.chooseview.spinmenuview.MyHeroesOne"
             android:theme="@style/Theme.Transparent"></activity>
         <activity
-            android:name=".allherodisplay.chooseview.MyHeroesTwo"
+            android:name=".allherodisplay.chooseview.spinmenuview.MyHeroesTwo"
             android:theme="@style/Theme.Transparent"></activity>
 
         <activity

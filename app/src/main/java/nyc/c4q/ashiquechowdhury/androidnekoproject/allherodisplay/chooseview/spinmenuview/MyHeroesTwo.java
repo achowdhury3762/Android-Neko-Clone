@@ -1,4 +1,4 @@
-package nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview;
+package nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.spinmenuview;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -13,14 +13,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.Cyborg;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.DareDevil;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.GreenArrow;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.GreenLantern;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.HawkEye;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.Hulk;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.Spiderman;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.TheFlash;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.spinmenuview.herofragments.Cyborg;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.spinmenuview.herofragments.DareDevil;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.spinmenuview.herofragments.GreenArrow;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.spinmenuview.herofragments.GreenLantern;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.spinmenuview.herofragments.HawkEye;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.spinmenuview.herofragments.Hulk;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.spinmenuview.herofragments.Spiderman;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.spinmenuview.herofragments.TheFlash;
 
 /**
  * Created by Hyun on 12/29/16.

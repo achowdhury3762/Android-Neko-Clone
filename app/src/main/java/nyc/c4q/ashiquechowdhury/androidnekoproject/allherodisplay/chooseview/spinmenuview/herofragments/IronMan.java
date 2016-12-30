@@ -1,4 +1,4 @@
-package nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments;
+package nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.spinmenuview.herofragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,16 +11,15 @@ import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
 /**
  * Created by Hyun on 12/18/16.
  */
-public class DareDevil extends Fragment {
-
+public class IronMan extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        View view = inflater.inflate(R.layout.daredevil, container, false);
+        View view = inflater.inflate(R.layout.ironman, container, false);
         return view;
     }
-    public static DareDevil newInstance(){
-        DareDevil daredevil = new DareDevil();
-        return daredevil;
+    public static IronMan newInstance(){
+        IronMan ironMan = new IronMan();
+        return ironMan;
     }
 }

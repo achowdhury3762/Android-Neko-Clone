@@ -13,9 +13,9 @@ import java.util.List;
 
 import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.herorview.HeroAdapter;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.util.HeroIcons;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.MyHeroesOne;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.MyHeroesTwo;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.herorview.util.HeroIcons;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.spinmenuview.MyHeroesOne;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.spinmenuview.MyHeroesTwo;
 
 /**
  * Created by Hyun on 12/17/16.
