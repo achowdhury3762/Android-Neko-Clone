@@ -1,36 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_weight=".6"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <com.hitomi.smlibrary.SpinMenu
-        android:id="@+id/spin_menu"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight=".2"
-        app:hint_text_color="#FFFFFF"
-        app:hint_text_size="14sp"
-        app:scale_ratio="0.36">
+        android:orientation="vertical">
 
-        <FrameLayout
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/heromenu_RV"
+            android:background="@drawable/herobq"
+            android:gravity="center"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#98A9A9A9">
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal">
 
             <Button
-                android:id="@+id/changeview_btn"
-                android:onClick="clickable"
-                android:layout_width="70dp"
-                android:layout_height="50dp"
-                android:layout_weight="0"
-                android:layout_marginTop="30dp"
-                android:layout_gravity="top|center"
-                android:background="@drawable/changeview_btn"
-                android:text="switch view" />
-        </FrameLayout>
-    </com.hitomi.smlibrary.SpinMenu>
+                android:id="@+id/herobtn1"
+                android:text="@string/view_one"
+                android:fontFamily="monospace"
+                android:background="@drawable/circlebutton"
+                android:layout_weight=".1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/herobtn2"
+                android:text="@string/view_two"
+                android:fontFamily="monospace"
+                android:background="@drawable/circlebutton"
+                android:layout_weight=".1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
 </LinearLayout>
 

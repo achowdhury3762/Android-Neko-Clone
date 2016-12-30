@@ -1,111 +1,57 @@
 package nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay;
 
-import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
-import com.hitomi.smlibrary.OnSpinMenuStateChangeListener;
-import com.hitomi.smlibrary.SpinMenu;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.Aquaman;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.Batman;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.BlackWidow;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.CaptainAmerica;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.IronMan;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.Superman;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.Thor;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments.WonderWoman;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.HeroAdapter;
 
 /**
  * Created by Hyun on 12/17/16.
  */
-public class HeroMenuActivity extends AppCompatActivity {
+public class HeroMenuActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private SpinMenu spinMenu;
-    private Button changeView;
-    private FragmentPagerAdapter fragmentPagerAdapter;
-    private List<String> heroesMenu = new ArrayList<>();
-    private final List<Fragment> fragmentList = new ArrayList<>();
+    private Button herobtnOne, herobtnTwo;
+
+    private RecyclerView mRecycler;
+    private List<Integer> heroIcons = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_heromenu);
-
-        initViews();
-        addHeroes();
-        addFragments();
-        clickable(changeView);
-
-        fragmentPagerAdapter = new FragmentPagerAdapter(getSupportFragmentManager()) {
-            @Override
-            public Fragment getItem(int position) {
-                return fragmentList.get(position);
-            }
-
-            @Override
-            public int getCount() {
-                return fragmentList.size();
-            }
-        };
-        spinMenu.setFragmentAdapter(fragmentPagerAdapter);
-        spinMenu.setOnSpinMenuStateChangeListener(new OnSpinMenuStateChangeListener() {
-
-            @Override
-            public void onMenuOpened() {
-
-            }
-
-            @Override
-            public void onMenuClosed() {
-
-            }
-        });
+        initView();
+        startRecycler();
     }
 
-    private void initViews() {
-        changeView = (Button) findViewById(R.id.changeview_btn);
-        spinMenu = (SpinMenu) findViewById(R.id.spin_menu);
-        spinMenu.setHintTextStrList(heroesMenu);
-        spinMenu.setHintTextColor(Color.parseColor("#FFFFFF"));
-        spinMenu.setHintTextSize(14);
-        spinMenu.setEnableGesture(true);
+    private void initView() {
+        herobtnOne = (Button) findViewById(R.id.herobtn1);
+        herobtnTwo = (Button) findViewById(R.id.herobtn2);
+        herobtnOne.setOnClickListener(this);
+        herobtnTwo.setOnClickListener(this);
     }
 
-    private void addHeroes() {
-        heroesMenu.add("AQUAMAN");
-        heroesMenu.add("BATMAN");
-        heroesMenu.add("BLACK WIDOW");
-        heroesMenu.add("CAPTAIN AMERICA");
-        heroesMenu.add("WONDER WOMAN");
-        heroesMenu.add("IRON MAN");
-        heroesMenu.add("THOR");
-        heroesMenu.add("SUPERMAN");
+    private void startRecycler() {
+        heroIcons = HeroIcons.getListOfDrawables();
+        mRecycler = (RecyclerView) findViewById(R.id.heromenu_RV);
+        mRecycler.setLayoutManager(new GridLayoutManager(HeroMenuActivity.this,4));
+        mRecycler.setAdapter(new HeroAdapter(heroIcons));
     }
 
-    private void addFragments() {
-
-        fragmentList.add(Aquaman.newInstance());
-        fragmentList.add(Batman.newInstance());
-        fragmentList.add(BlackWidow.newInstance());
-        fragmentList.add(CaptainAmerica.newInstance());
-        fragmentList.add(WonderWoman.newInstance());
-        fragmentList.add(IronMan.newInstance());
-        fragmentList.add(Thor.newInstance());
-        fragmentList.add(Superman.newInstance());
-
-    }
-
-    public void clickable(View view) {
-        Toast.makeText(this, "change view now!", Toast.LENGTH_LONG).show();
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.herobtn1:
+            case R.id.herobtn2:
+                Toast.makeText(getParent(), "button clicked", Toast.LENGTH_LONG).show();
+        }
     }
 }

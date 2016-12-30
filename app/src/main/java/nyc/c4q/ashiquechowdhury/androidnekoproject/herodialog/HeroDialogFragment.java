@@ -24,9 +24,13 @@ import nyc.c4q.ashiquechowdhury.androidnekoproject.util.RandomNumberChooser;
  */
 
 public class HeroDialogFragment extends DialogFragment {
+
     private static final String HERO_DIALOG_IMAGE_URL = "https://marvelheroes.com/sites/default/files/slider/images/banner-000.png";
-    @BindView(R.id.hero_dialog_image) ImageView heroDialogImageView;
-    @BindView(R.id.spins_TV) TextView spinsEarnedView;
+    @BindView(R.id.hero_dialog_image)
+    ImageView heroDialogImageView;
+    @BindView(R.id.spins_TV)
+    TextView spinsEarnedView;
+
     private SpinnerDialogListener mListener;
     private MySharedPreferences sharedPreferences;
 
@@ -37,20 +41,23 @@ public class HeroDialogFragment extends DialogFragment {
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         sharedPreferences = MySharedPreferences.getInstance(getActivity().getApplicationContext());
-        View dialogView = createDialogView();
+        final View dialogView = createDialogView();
         ButterKnife.bind(this, dialogView);
         setImageWithPicasso(heroDialogImageView, dialogView.getContext(), HERO_DIALOG_IMAGE_URL);
 
         int heroesEarned = getUserEarnedHeroes();
         spinsEarnedView.setText(String.valueOf(heroesEarned) + " HEROES!");
 
-
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        builder.setView(dialogView)
-                .setMessage("You've Earned")
+        builder.setMessage("You've Earned")
                 .setPositiveButton(R.string.use_spinner, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         mListener.onDialogPositiveClick(HeroDialogFragment.this);
+                    }
+                })
+                .setNeutralButton(R.string.recyclerview_heroes, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        mListener.onDialogNeutralClick(HeroDialogFragment.this);
                     }
                 })
                 .setNegativeButton(R.string.hero_overview, new DialogInterface.OnClickListener() {
@@ -79,12 +86,6 @@ public class HeroDialogFragment extends DialogFragment {
                 .load(imageURL)
                 .fit()
                 .into(herodialogImageView);
-    }
-
-    public interface SpinnerDialogListener {
-        void onDialogPositiveClick(DialogFragment dialog);
-        void onDialogNeutralClick(DialogFragment dialog);
-        void onDialogNegativeClick(DialogFragment dialog);
     }
 
     @Override

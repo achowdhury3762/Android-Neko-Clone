@@ -1,7 +1,7 @@
 [
     {
-        "merged": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_secondary_text_material_light.xml",
-        "source": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_secondary_text_material_light.xml"
+        "merged": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/switch_thumb_material_light.xml",
+        "source": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/switch_thumb_material_light.xml"
     },
     {
         "merged": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_disable_only_material_dark.xml",
@@ -10,6 +10,10 @@
     {
         "merged": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_btn_colored_borderless_text_material.xml",
         "source": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_tint_btn_checkable.xml",
+        "source": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_tint_btn_checkable.xml"
     },
     {
         "merged": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_tint_switch_track.xml",
@@ -32,20 +36,20 @@
         "source": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/switch_thumb_material_light.xml"
     },
     {
-        "merged": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_tint_default.xml",
-        "source": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_tint_default.xml"
+        "merged": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_material_light.xml",
+        "source": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_primary_text_material_light.xml"
     },
     {
-        "merged": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_material_dark.xml",
-        "source": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_primary_text_material_dark.xml"
+        "merged": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_tint_default.xml",
+        "source": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_tint_default.xml"
     },
     {
         "merged": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_search_url_text.xml",
         "source": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_search_url_text.xml"
     },
     {
-        "merged": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/res/merged/androidTest/debug/color/switch_thumb_material_dark.xml",
-        "source": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/switch_thumb_material_dark.xml"
+        "merged": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_tint_default.xml",
+        "source": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_tint_default.xml"
     },
     {
         "merged": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_tint_seek_thumb.xml",
@@ -56,12 +60,8 @@
         "source": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/switch_thumb_material_dark.xml"
     },
     {
-        "merged": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_material_light.xml",
-        "source": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_primary_text_material_light.xml"
-    },
-    {
-        "merged": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_disable_only_material_light.xml",
-        "source": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_primary_text_disable_only_material_light.xml"
+        "merged": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_btn_colored_borderless_text_material.xml",
+        "source": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_btn_colored_borderless_text_material.xml"
     },
     {
         "merged": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_material_light.xml",
@@ -76,12 +76,16 @@
         "source": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_tint_spinner.xml"
     },
     {
-        "merged": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_tint_btn_checkable.xml",
-        "source": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_tint_btn_checkable.xml"
+        "merged": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_tint_edittext.xml",
+        "source": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_tint_edittext.xml"
     },
     {
-        "merged": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_tint_default.xml",
-        "source": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_tint_default.xml"
+        "merged": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_tint_seek_thumb.xml",
+        "source": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_search_url_text.xml",
+        "source": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_search_url_text.xml"
     },
     {
         "merged": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_material_dark.xml",
@@ -96,12 +100,80 @@
         "source": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_tint_edittext.xml"
     },
     {
+        "merged": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_tint_switch_thumb.xml",
+        "source": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_tint_switch_thumb.xml"
+    },
+    {
         "merged": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/switch_thumb_material_light.xml",
         "source": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/switch_thumb_material_light.xml"
     },
     {
         "merged": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_tint_spinner.xml",
         "source": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_tint_switch_track.xml",
+        "source": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_search_url_text.xml",
+        "source": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_tint_seek_thumb.xml",
+        "source": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/switch_thumb_material_dark.xml",
+        "source": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/res/merged/androidTest/debug/color/switch_thumb_material_dark.xml",
+        "source": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_material_light.xml",
+        "source": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_tint_spinner.xml",
+        "source": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_tint_btn_checkable.xml",
+        "source": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_tint_default.xml",
+        "source": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_tint_default.xml"
     },
     {
         "merged": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_secondary_text_material_light.xml",
@@ -112,27 +184,23 @@
         "source": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_tint_switch_thumb.xml"
     },
     {
-        "merged": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_disable_only_material_light.xml",
-        "source": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_primary_text_disable_only_material_light.xml"
-    },
-    {
         "merged": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_tint_edittext.xml",
         "source": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_tint_edittext.xml"
-    },
-    {
-        "merged": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_search_url_text.xml",
-        "source": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_search_url_text.xml"
     },
     {
         "merged": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_tint_switch_track.xml",
         "source": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_tint_switch_track.xml"
     },
     {
-        "merged": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_tint_seek_thumb.xml",
-        "source": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_tint_seek_thumb.xml"
+        "merged": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_secondary_text_material_light.xml"
     },
     {
         "merged": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_tint_btn_checkable.xml",
         "source": "/Users/Hyun/Desktop/accesscode/Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/color/abc_primary_text_disable_only_material_light.xml"
     }
 ]
