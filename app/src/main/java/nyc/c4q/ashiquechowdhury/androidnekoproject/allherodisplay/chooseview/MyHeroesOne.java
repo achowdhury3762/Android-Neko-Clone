@@ -77,10 +77,10 @@ public class MyHeroesOne extends AppCompatActivity {
         heroesMenu.add("BATMAN");
         heroesMenu.add("BLACK WIDOW");
         heroesMenu.add("CAPTAIN AMERICA");
-        heroesMenu.add("WONDER WOMAN");
         heroesMenu.add("IRON MAN");
         heroesMenu.add("THOR");
         heroesMenu.add("SUPERMAN");
+        heroesMenu.add("WONDER WOMAN");
     }
 
     private void addFirstEightFragments() {
