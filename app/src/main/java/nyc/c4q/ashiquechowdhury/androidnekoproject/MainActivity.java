@@ -9,7 +9,6 @@ import android.widget.Toast;
 
 import nyc.c4q.ashiquechowdhury.androidnekoproject.startofftodialog.MyAlarmReceiver;
 
-
 public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,5 +26,4 @@ public class MainActivity extends AppCompatActivity {
         AlarmManager alarm = (AlarmManager) this.getSystemService(ALARM_SERVICE);
         alarm.setInexactRepeating(AlarmManager.RTC_WAKEUP, firstMillis, 10L, pendingIntent);
     }
-
 }

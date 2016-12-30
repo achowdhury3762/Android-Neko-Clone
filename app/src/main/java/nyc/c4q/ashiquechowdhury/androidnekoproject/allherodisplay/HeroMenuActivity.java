@@ -11,6 +11,8 @@ import android.widget.Button;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.herorview.HeroAdapter;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.herorview.util.HeroIcons;
@@ -21,9 +23,9 @@ import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.spi
  * Created by Hyun on 12/17/16.
  */
 public class HeroMenuActivity extends AppCompatActivity implements View.OnClickListener {
-
-    private Button herobtnOne, herobtnTwo;
-    private RecyclerView mRecycler;
+    @BindView(R.id.herobtn1) Button heroPageOneBtn;
+    @BindView(R.id.herobtn2) Button heroPageTwoBtn;
+    @BindView(R.id.heromenu_RV) RecyclerView heroRecycler;
     private List<Integer> heroIcons = new ArrayList<>();
 
     @Override
@@ -35,18 +37,16 @@ public class HeroMenuActivity extends AppCompatActivity implements View.OnClickL
     }
 
     private void initView() {
-        herobtnOne = (Button) findViewById(R.id.herobtn1);
-        herobtnTwo = (Button) findViewById(R.id.herobtn2);
-        herobtnOne.setOnClickListener(this);
-        herobtnTwo.setOnClickListener(this);
+        ButterKnife.bind(this);
+        heroPageOneBtn.setOnClickListener(this);
+        heroPageTwoBtn.setOnClickListener(this);
     }
 
     private void startRecycler() {
         HeroIcons myIcons = HeroIcons.getInstance();
         heroIcons = myIcons.getListOfDrawables();
-        mRecycler = (RecyclerView) findViewById(R.id.heromenu_RV);
-        mRecycler.setLayoutManager(new GridLayoutManager(HeroMenuActivity.this,4));
-        mRecycler.setAdapter(new HeroAdapter(heroIcons));
+        heroRecycler.setLayoutManager(new GridLayoutManager(HeroMenuActivity.this,4));
+        heroRecycler.setAdapter(new HeroAdapter(heroIcons));
     }
 
     @Override
