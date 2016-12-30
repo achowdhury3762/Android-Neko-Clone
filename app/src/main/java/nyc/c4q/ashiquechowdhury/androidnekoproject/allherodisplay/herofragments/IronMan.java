@@ -1,6 +1,5 @@
 package nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.herofragments;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -13,20 +12,6 @@ import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
  * Created by Hyun on 12/18/16.
  */
 public class IronMan extends Fragment {
-
-    @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-    }
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
-
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){

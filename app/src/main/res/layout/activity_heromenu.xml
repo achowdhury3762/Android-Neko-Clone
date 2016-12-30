@@ -1,26 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.hitomi.smlibrary.SpinMenu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/spin_menu"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    app:hint_text_color="#FFFFFF"
-    app:hint_text_size="14sp"
-    app:scale_ratio="0.36">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#98A9A9A9"
-        >
+        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:text="Count : 150"
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/heromenu_RV"
+            android:background="@drawable/herobq"
             android:gravity="center"
-            android:textSize="70sp"
-            />
-    </RelativeLayout>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
 
-</com.hitomi.smlibrary.SpinMenu>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/herobtn1"
+                android:text="@string/view_one"
+                android:fontFamily="monospace"
+                android:background="@drawable/circlebutton"
+                android:layout_weight=".1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/herobtn2"
+                android:text="@string/view_two"
+                android:fontFamily="monospace"
+                android:background="@drawable/circlebutton"
+                android:layout_weight=".1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+

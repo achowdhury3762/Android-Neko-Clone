@@ -3,4 +3,8 @@
     <string name="dialog_spin_count">HOW MANY SPINS WILL YOU USE</string>
     <string name="hero_overview">My Heroes</string>
     <string name="use_spinner">Use Spins</string>
+    <string name="recyclerview_heroes">My Collection</string>
+    <string name="no_spins">No spins</string>
+    <string name="view_one">Spin One</string>
+    <string name="view_two">Spin Two</string>
 </resources>

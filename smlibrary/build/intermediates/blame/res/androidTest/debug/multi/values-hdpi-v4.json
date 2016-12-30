@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+        "outputFile": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 327
                 },
                 "from": {
-                    "file": "/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "file": "/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/src/main/jniLibs"/></dataSet><dataSet config="release"><source path="/Users/ashiquechowdhury/Desktop/accesscode/AndroidNekoProject/smlibrary/src/release/jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/src/main/jniLibs"/></dataSet><dataSet config="release"><source path="/Users/Hyun/Desktop/HW_12-17_Android-Neko-Clone/smlibrary/src/release/jniLibs"/></dataSet></merger>
