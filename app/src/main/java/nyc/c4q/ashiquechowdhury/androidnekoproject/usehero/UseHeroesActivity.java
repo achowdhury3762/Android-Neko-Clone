@@ -23,12 +23,9 @@ import nyc.c4q.ashiquechowdhury.androidnekoproject.util.RandomNumberChooser;
  */
 
 public class UseHeroesActivity extends AppCompatActivity {
-    @BindView(R.id.total_hero_tView)
-    TextView totalHeroesTView;
-    @BindView(R.id.bmb)
-    BoomMenuButton nineMenuButton;
-    @BindView(R.id.bmb2)
-    BoomMenuButton oneMenuButton;
+    @BindView(R.id.total_hero_tView) TextView totalHeroesTView;
+    @BindView(R.id.bmb) BoomMenuButton nineMenuButton;
+    @BindView(R.id.bmb2) BoomMenuButton oneMenuButton;
     private MySharedPreferences sharedPrefs;
     private Hero[] myHeroes;
 
@@ -41,15 +38,15 @@ public class UseHeroesActivity extends AppCompatActivity {
 
         myHeroes = new Hero[16];
         myHeroes[0] = new Hero("AQUAMAN", R.drawable.aquaman_icon);
-        myHeroes[1] = new Hero("BATMAN", R.drawable.aquaman_icon);
+        myHeroes[1] = new Hero("BATMAN", R.drawable.batman_icon);
         myHeroes[2] = new Hero("BLACKWIDOW", R.drawable.blackwidow_icon);
         myHeroes[3] = new Hero("CAPTAINAMERICA", R.drawable.captainamerica_icon);
-        myHeroes[4] = new Hero("CYBORG", R.drawable.aquaman_icon);
+        myHeroes[4] = new Hero("CYBORG", R.drawable.cyborg_icon);
         myHeroes[5] = new Hero("DAREDEVIL", R.drawable.daredevil_icon);
         myHeroes[6] = new Hero("HAWKEYE", R.drawable.hawkeye_icon);
         myHeroes[7] = new Hero("GREENLANTERN", R.drawable.greenlantern_icon);
         myHeroes[8] = new Hero("FLASH", R.drawable.flash_icon);
-        myHeroes[9] = new Hero("NICKFURY", R.drawable.nickfury_icon);
+        myHeroes[9] = new Hero("IRON MAN", R.drawable.ironman_icon);
         myHeroes[10] = new Hero("WONDERWOMAN", R.drawable.wonderwoman_icon);
         myHeroes[11] = new Hero("THOR", R.drawable.thor_icon);
         myHeroes[12] = new Hero("SUPERMAN", R.drawable.superman_icon);
@@ -95,10 +92,9 @@ public class UseHeroesActivity extends AppCompatActivity {
     }
 
     private void setUpOneHeroClickedButton() {
-        nineMenuButton.setCacheOptimization(false);
-        oneMenuButton.setCacheOptimization(false);
         for (int i = 0; i < oneMenuButton.getPiecePlaceEnum().pieceNumber(); i++) {
             int randNum = RandomNumberChooser.chooseRandomNumber(15);
+
             Hero randomHero = myHeroes[randNum];
             TextInsideCircleButton.Builder builder = new TextInsideCircleButton.Builder()
                     .normalImageRes(randomHero.getDrawable())

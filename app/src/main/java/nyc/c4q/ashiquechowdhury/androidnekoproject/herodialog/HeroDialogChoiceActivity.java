@@ -12,7 +12,7 @@ import nyc.c4q.ashiquechowdhury.androidnekoproject.usehero.UseHeroesActivity;
 /**
  * Created by ashiquechowdhury on 12/12/16.
  */
-public class HeroDialogChoiceActivity extends FragmentActivity implements SpinnerDialogListener {
+public class HeroDialogChoiceActivity extends FragmentActivity implements HeroDialogFragment.SpinnerDialogListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,7 @@ public class HeroDialogChoiceActivity extends FragmentActivity implements Spinne
     }
 
     @Override
-    public void onDialogNeutralClick(DialogFragment dialog) {
+    public void onDialogNegativeClick(DialogFragment dialog) {
         Intent intent = new Intent(this, HeroMenuActivity.class);
         startActivity(intent);
     }

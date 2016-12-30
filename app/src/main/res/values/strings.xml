@@ -5,6 +5,6 @@
     <string name="use_spinner">Use Spins</string>
     <string name="recyclerview_heroes">My Collection</string>
     <string name="no_spins">No spins</string>
-    <string name="view_one">Spin One</string>
-    <string name="view_two">Spin Two</string>
+    <string name="view_one">Page One</string>
+    <string name="view_two">Page Two</string>
 </resources>

@@ -1,4 +1,4 @@
-package nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview;
+package nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.util;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,10 +9,10 @@ import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
  * Created by Hyun on 12/29/16.
  */
 public class HeroIcons {
+    private static HeroIcons instance;
+    private List<Integer> listOfDrawables = new ArrayList<>();;
 
-    private static List<Integer> listOfDrawables = new ArrayList<>();;
-
-    public HeroIcons(){
+    private HeroIcons(){
         listOfDrawables.add(R.drawable.aquaman_icon);
         listOfDrawables.add(R.drawable.batman_icon);
         listOfDrawables.add(R.drawable.blackwidow_icon);
@@ -31,8 +31,14 @@ public class HeroIcons {
         listOfDrawables.add(R.drawable.wonderwoman_icon);
     }
 
-    public static List<Integer> getListOfDrawables() {
-        HeroIcons icons = new HeroIcons();
+    public static HeroIcons getInstance(){
+        if(instance == null){
+            instance = new HeroIcons();
+        }
+        return instance;
+    }
+
+    public List<Integer> getListOfDrawables() {
         return listOfDrawables;
     }
 }

@@ -8,8 +8,8 @@ import android.preference.PreferenceManager;
  * Created by ashiquechowdhury on 12/17/16.
  */
 public class MySharedPreferences {
-    public static MySharedPreferences instance = null;
-    SharedPreferences sharedPrefs;
+    private static MySharedPreferences instance = null;
+    private SharedPreferences sharedPrefs;
     public static final String TOTALHEROCOUNT = "nyc.c4q.ashiquechowdhury.TOTALHEROCOUNT";
     public static final String AQUAMANCOUNT = "nyc.c4q.ashiquechowdhury.AQUAMAN";
     public static final String BATMANCOUNT = "nyc.c4q.ashiquechowdhury.BATMAN";
@@ -27,7 +27,6 @@ public class MySharedPreferences {
     public static final String THORCOUNT = "nyc.c4q.ashiquechowdhury.THOR";
     public static final String WONDERWOMANCOUNT = "nyc.c4q.ashiquechowdhury.WONDERWOMAN";
     public static final String NICKFURYCOUNT = "nyc.c4q.ashiquechowdhury.NICKFURY";
-
 
     private MySharedPreferences(Context context){
         sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);

@@ -18,20 +18,21 @@
 
         <activity
             android:name=".allherodisplay.HeroMenuActivity"
-            android:theme="@style/Theme.TransparentHero">
-        </activity>
+            android:theme="@style/Theme.TransparentHero"></activity>
 
         <activity
             android:name=".allherodisplay.chooseview.MyHeroesOne"
-            android:theme="@style/Theme.Transparent">
-        </activity>
+            android:theme="@style/Theme.Transparent"></activity>
         <activity
             android:name=".allherodisplay.chooseview.MyHeroesTwo"
-            android:theme="@style/Theme.Transparent">
-        </activity>
-        
+            android:theme="@style/Theme.Transparent"></activity>
+
         <activity
             android:name=".MainActivity"
+            android:theme="@style/Theme.Transparent">
+        </activity>
+        <activity
+            android:name=".herodialog.HeroDialogChoiceActivity"
             android:theme="@style/Theme.Transparent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,13 +40,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".herodialog.HeroDialogChoiceActivity"
-            android:theme="@style/Theme.Transparent" >
-        </activity>
-        <activity
             android:name=".usehero.UseHeroesActivity"
-            android:theme="@style/Theme.Transparent">
-        </activity>
+            android:theme="@style/Theme.Transparent"></activity>
 
     </application>
 

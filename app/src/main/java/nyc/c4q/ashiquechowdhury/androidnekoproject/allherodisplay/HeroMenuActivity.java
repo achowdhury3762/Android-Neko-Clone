@@ -12,8 +12,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.HeroAdapter;
-import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.HeroIcons;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.herorview.HeroAdapter;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.util.HeroIcons;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.MyHeroesOne;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.MyHeroesTwo;
 
@@ -42,7 +42,8 @@ public class HeroMenuActivity extends AppCompatActivity implements View.OnClickL
     }
 
     private void startRecycler() {
-        heroIcons = HeroIcons.getListOfDrawables();
+        HeroIcons myIcons = HeroIcons.getInstance();
+        heroIcons = myIcons.getListOfDrawables();
         mRecycler = (RecyclerView) findViewById(R.id.heromenu_RV);
         mRecycler.setLayoutManager(new GridLayoutManager(HeroMenuActivity.this,4));
         mRecycler.setAdapter(new HeroAdapter(heroIcons));
