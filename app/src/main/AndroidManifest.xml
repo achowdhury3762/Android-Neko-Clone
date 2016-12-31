@@ -42,7 +42,6 @@
         <activity
             android:name=".usehero.UseHeroesActivity"
             android:theme="@style/Theme.Transparent"></activity>
-
     </application>
 
 </manifest>

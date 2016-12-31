@@ -1,11 +1,12 @@
 package nyc.c4q.ashiquechowdhury.androidnekoproject.usehero;
 
 
+import android.content.Intent;
 import android.graphics.Rect;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.nightonke.boommenu.BoomButtons.TextInsideCircleButton;
 import com.nightonke.boommenu.BoomMenuButton;
@@ -18,6 +19,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.HeroMenuActivity;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.usehero.model.Hero;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.util.MySharedPreferences;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.util.RandomNumberChooser;
@@ -72,8 +74,6 @@ public class UseHeroesActivity extends AppCompatActivity {
                 sharedPrefs.decreaseTotalHeroCount(7);
                 for (int i = 0; i < 7; i++) {
                     sharedPrefs.increaseHeroCountByOne(nineHeroChosenList.get(i));
-                    Toast.makeText(UseHeroesActivity.this, nineHeroChosenList.get(i).getName(), Toast.LENGTH_LONG).show();
-
                 }
                 setTotalHeroText(totalHeroesTView, sharedPrefs.getTotalHeroCount());
             }
@@ -136,5 +136,10 @@ public class UseHeroesActivity extends AppCompatActivity {
                 spinCount
         );
         myTextView.setText(totalSpinCount + " HEROES LEFT");
+    }
+
+    public void onClickHeroesLeftBtn(View view){
+        Intent intent = new Intent(this, HeroMenuActivity.class);
+        startActivity(intent);
     }
 }
