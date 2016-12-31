@@ -8,15 +8,16 @@ import android.view.ViewGroup;
 import java.util.List;
 
 import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.usehero.model.Hero;
 
 /**
  * Created by Hyun on 12/29/16.
  */
 public class HeroAdapter extends RecyclerView.Adapter<HeroViewHolder> {
 
-    private List<Integer> heroView;
+    private List<Hero> heroView;
 
-    public HeroAdapter(List<Integer> heroView) {
+    public HeroAdapter(List<Hero> heroView) {
         this.heroView = heroView;
     }
 

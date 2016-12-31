@@ -5,11 +5,15 @@ import android.graphics.Rect;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.nightonke.boommenu.BoomButtons.TextInsideCircleButton;
 import com.nightonke.boommenu.BoomMenuButton;
 import com.nightonke.boommenu.OnBoomListenerAdapter;
 import com.nightonke.boommenu.Util;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -28,6 +32,8 @@ public class UseHeroesActivity extends AppCompatActivity {
     @BindView(R.id.bmb2) BoomMenuButton oneMenuButton;
     private MySharedPreferences sharedPrefs;
     private Hero[] myHeroes;
+    private List<Hero> oneHeroChosenList = new ArrayList<>();
+    private List<Hero> nineHeroChosenList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +69,12 @@ public class UseHeroesActivity extends AppCompatActivity {
             @Override
             public void onBoomWillShow() {
                 super.onBoomWillShow();
-                sharedPrefs.decreaseTotalHeroCount(9);
+                sharedPrefs.decreaseTotalHeroCount(7);
+                for (int i = 0; i < 7; i++) {
+                    sharedPrefs.increaseHeroCountByOne(nineHeroChosenList.get(i));
+                    Toast.makeText(UseHeroesActivity.this, nineHeroChosenList.get(i).getName(), Toast.LENGTH_LONG).show();
+
+                }
                 setTotalHeroText(totalHeroesTView, sharedPrefs.getTotalHeroCount());
             }
 
@@ -79,6 +90,7 @@ public class UseHeroesActivity extends AppCompatActivity {
             public void onBoomWillShow() {
                 super.onBoomWillShow();
                 sharedPrefs.decreaseTotalHeroCount(1);
+                sharedPrefs.increaseHeroCountByOne(oneHeroChosenList.get(0));
                 setTotalHeroText(totalHeroesTView, sharedPrefs.getTotalHeroCount());
             }
 
@@ -96,6 +108,7 @@ public class UseHeroesActivity extends AppCompatActivity {
             int randNum = RandomNumberChooser.chooseRandomNumber(15);
 
             Hero randomHero = myHeroes[randNum];
+            oneHeroChosenList.add(randomHero);
             TextInsideCircleButton.Builder builder = new TextInsideCircleButton.Builder()
                     .normalImageRes(randomHero.getDrawable())
                     .buttonRadius(Util.dp2px(100))
@@ -108,8 +121,9 @@ public class UseHeroesActivity extends AppCompatActivity {
     private void setUpNineHeroClickedButton() {
         for (int i = 0; i < nineMenuButton.getPiecePlaceEnum().pieceNumber(); i++) {
             int randNum = RandomNumberChooser.chooseRandomNumber(15);
-            Hero randomHero = myHeroes[randNum];
 
+            Hero randomHero = myHeroes[randNum];
+            nineHeroChosenList.add(randomHero);
             TextInsideCircleButton.Builder builder = new TextInsideCircleButton.Builder()
                     .normalImageRes(randomHero.getDrawable())
                     .buttonRadius(Util.dp2px(40));

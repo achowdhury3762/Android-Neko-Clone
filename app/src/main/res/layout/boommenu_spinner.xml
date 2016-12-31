@@ -3,42 +3,44 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:gravity="center"
     android:background="#98A9A9A9"
     android:layout_width="match_parent"
+    android:padding="15dp"
+    android:gravity="center_vertical"
     android:layout_height="match_parent">
 
-    <TextView
+    <Button
         android:id="@+id/total_hero_tView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
+        android:background="@drawable/ripple_white"
         android:gravity="center"
         android:text="@string/no_spins"
         android:textSize="50sp" />
 
     <com.nightonke.boommenu.BoomMenuButton
         android:id="@+id/bmb2"
-        app:bmb_buttonRadius="40dp"
+        android:layout_below="@id/total_hero_tView"
+        android:layout_marginTop="120dp"
+        app:bmb_buttonRadius="50dp"
         app:bmb_buttonEnum="textInsideCircle"
         app:bmb_piecePlaceEnum="piecePlace_dot_1"
         app:bmb_buttonPlaceEnum="buttonPlace_sc_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="40dp"
-        android:layout_alignParentStart="true">
+        >
     </com.nightonke.boommenu.BoomMenuButton>
 
     <com.nightonke.boommenu.BoomMenuButton
+        android:layout_below="@id/total_hero_tView"
         android:id="@+id/bmb"
-        app:bmb_buttonRadius="40dp"
+        app:bmb_buttonRadius="50dp"
+        android:layout_marginTop="120dp"
         app:bmb_buttonEnum="textInsideCircle"
         app:bmb_piecePlaceEnum="piecePlace_dot_7_3"
         app:bmb_buttonPlaceEnum="buttonPlace_sc_7_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/bmb2"
-        android:layout_marginRight="40dp"
         android:layout_alignParentEnd="true">
     </com.nightonke.boommenu.BoomMenuButton>
 </RelativeLayout>

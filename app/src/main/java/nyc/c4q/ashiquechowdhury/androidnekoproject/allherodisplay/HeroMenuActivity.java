@@ -18,6 +18,7 @@ import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.her
 import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.herorview.util.HeroIcons;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.spinmenuview.MyHeroesOne;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.chooseview.spinmenuview.MyHeroesTwo;
+import nyc.c4q.ashiquechowdhury.androidnekoproject.usehero.model.Hero;
 
 /**
  * Created by Hyun on 12/17/16.
@@ -26,7 +27,7 @@ public class HeroMenuActivity extends AppCompatActivity implements View.OnClickL
     @BindView(R.id.herobtn1) Button heroPageOneBtn;
     @BindView(R.id.herobtn2) Button heroPageTwoBtn;
     @BindView(R.id.heromenu_RV) RecyclerView heroRecycler;
-    private List<Integer> heroIcons = new ArrayList<>();
+    private List<Hero> heroIcons = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,8 +45,8 @@ public class HeroMenuActivity extends AppCompatActivity implements View.OnClickL
 
     private void startRecycler() {
         HeroIcons myIcons = HeroIcons.getInstance();
-        heroIcons = myIcons.getListOfDrawables();
-        heroRecycler.setLayoutManager(new GridLayoutManager(HeroMenuActivity.this,4));
+        heroIcons = myIcons.getListOfHeroes();
+        heroRecycler.setLayoutManager(new GridLayoutManager(this, 4));
         heroRecycler.setAdapter(new HeroAdapter(heroIcons));
     }
 
