@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentActivity;
 
+import nyc.c4q.ashiquechowdhury.androidnekoproject.R;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.allherodisplay.HeroMenuActivity;
 import nyc.c4q.ashiquechowdhury.androidnekoproject.usehero.UseHeroesActivity;
 
@@ -17,6 +18,7 @@ public class HeroDialogChoiceActivity extends FragmentActivity implements HeroDi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
         showSpinnerDialog();
     }
 
@@ -32,7 +34,7 @@ public class HeroDialogChoiceActivity extends FragmentActivity implements HeroDi
     }
 
     @Override
-    public void onDialogNegativeClick(DialogFragment dialog) {
+    public void onDialogNeutralClick(DialogFragment dialog) {
         Intent intent = new Intent(this, HeroMenuActivity.class);
         startActivity(intent);
     }

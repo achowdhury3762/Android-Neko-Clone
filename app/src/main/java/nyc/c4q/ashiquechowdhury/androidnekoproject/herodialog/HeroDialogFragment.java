@@ -53,9 +53,9 @@ public class HeroDialogFragment extends DialogFragment {
                         mListener.onDialogPositiveClick(HeroDialogFragment.this);
                     }
                 })
-                .setNegativeButton(R.string.hero_overview, new DialogInterface.OnClickListener() {
+                .setNeutralButton(R.string.hero_overview, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        mListener.onDialogNegativeClick(HeroDialogFragment.this);
+                        mListener.onDialogNeutralClick(HeroDialogFragment.this);
                     }
                 });
 
@@ -84,7 +84,7 @@ public class HeroDialogFragment extends DialogFragment {
     public interface SpinnerDialogListener {
         void onDialogPositiveClick(DialogFragment dialog);
 
-        void onDialogNegativeClick(DialogFragment dialog);
+        void onDialogNeutralClick(DialogFragment dialog);
     }
 
     @Override

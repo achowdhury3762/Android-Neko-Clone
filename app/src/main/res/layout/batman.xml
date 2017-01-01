@@ -5,19 +5,4 @@
     android:background="@drawable/batman_fullimage"
     android:orientation="vertical"
     android:gravity="center_horizontal">
-    <TextView
-        android:id="@+id/aquamanhero_textview"
-        android:text="Number Collected: "
-        android:textColor="#fff"
-        android:layout_width="wrap_content"
-        android:layout_height="40sp"
-        android:textSize="32sp"/>
-    <TextView
-        android:id="@+id/aquaman_count_textView"
-        android:text="120"
-        android:textColor="#fff"
-        android:layout_toRightOf="@id/aquamanhero_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="40sp"
-        android:textSize="32sp"/>
 </RelativeLayout>
