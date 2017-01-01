@@ -31,6 +31,7 @@
                 android:text="@string/view_one"
                 android:fontFamily="monospace"
                 android:background="@drawable/circlebutton"
+                android:enabled="false"
                 android:layout_weight=".1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent" />
@@ -40,6 +41,7 @@
                 android:text="@string/view_two"
                 android:fontFamily="monospace"
                 android:background="@drawable/circlebutton"
+                android:enabled="false"
                 android:layout_weight=".1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent" />
